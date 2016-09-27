@@ -1,0 +1,31 @@
+language: python
+python:
+  - "3.4"
+cache: pip
+# command to install dependencies
+env:
+  global:
+    - SSH_KEY="./travis_rsa"
+branches:
+  only:
+  - master
+before_install:
+- openssl aes-256-cbc -K $encrypted_e2586c4e322e_key -iv $encrypted_e2586c4e322e_iv -in travis_rsa.enc -out travis_rsa -d
+- chmod 600 $SSH_KEY
+- eval `ssh-agent -s`
+- ssh-add $SSH_KEY
+install:
+- pip install --upgrade pip
+- pip install --upgrade wheel
+- pip install --upgrade setuptools
+- pip install pelican ghp-import Markdown typogrify ghp-import
+before_script:
+#- pelican-themes -i ./theme
+script:
+- echo "Starting my commands..."
+- pwd
+- whoami
+- ls
+- echo 'files in content/content'
+- ls content/content
+- make publish github
