@@ -10,7 +10,7 @@ branches:
   only:
   - master
 before_install:
-- openssl aes-256-cbc -K $encrypted_2c768e57619e_key -iv $encrypted_2c768e57619e_iv -in travis_blog.pub.enc -out travis_blog.pub -d
+- openssl aes-256-cbc -K $encrypted_2c768e57619e_key -iv $encrypted_2c768e57619e_iv -in travis_blog.enc -out travis_blog -d
 - chmod 600 $SSH_KEY
 - eval `ssh-agent -s`
 - ssh-add $SSH_KEY
