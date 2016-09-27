@@ -122,7 +122,7 @@ github: publish
 	git config --global user.email "travis@travis.com"
 	git config --global user.name "Travis"
 	git config --global push.default simple
-	git remote set-url origin git@github.com:benlaken/benlaken.github.io
+	git remote set-url origin git@github.com:benlaken/blogsite.git
 	git push -f origin $(GITHUB_PAGES_BRANCH)
 	#@git push -fq git@github.com:$(TRAVIS_REPO_SLUG).git gh-pages > /dev/null
 
