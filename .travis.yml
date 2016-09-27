@@ -5,7 +5,7 @@ cache: pip
 # command to install dependencies
 env:
   global:
-    - SSH_KEY="./travis_rsa"
+    - SSH_KEY="./travis_blog"
 branches:
   only:
   - master
