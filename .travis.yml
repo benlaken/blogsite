@@ -5,12 +5,12 @@ cache: pip
 # command to install dependencies
 env:
   global:
-    - SSH_KEY="./travis_blog"
+    - SSH_KEY="./travis_rsa"
 branches:
   only:
   - master
 before_install:
-- openssl aes-256-cbc -K $encrypted_2c768e57619e_key -iv $encrypted_2c768e57619e_iv -in travis_blog.enc -out travis_blog -d
+- openssl aes-256-cbc -K $encrypted_2c768e57619e_key -iv $encrypted_2c768e57619e_iv -in travis_rsa.enc -out travis_rsa -d
 - chmod 600 $SSH_KEY
 - eval `ssh-agent -s`
 - ssh-add $SSH_KEY
