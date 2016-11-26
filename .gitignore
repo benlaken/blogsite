@@ -1,3 +1,5 @@
 travis_rsa
 travis_rsa.pub
 __pycache__/
+*.DS_Store
+output/

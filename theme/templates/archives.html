@@ -1,16 +1,30 @@
-{% extends "base.html" %}
-{% block archclass %} class="active"{%endblock%}
-{% block title %}Archives{%endblock%}
-{% block content %}
+{% extends 'index.html' %}
+{% block title %}all posts // {{ super() }}{% endblock title %}
+{% block pagetitle %}all posts{% endblock pagetitle %}
 
-<dl>
-    {% for year, date_year in dates|groupby( 'date.year' )|sort(reverse=True) %}  
-            <h3><a href="{{SITEURL}}/{{year}}"  class="text">Archive for {{ year }}</a></h3>
-            <ul class="archive-list">
-            {% for article in date_year %}
-                <li><span class="text-muted">{{article.locale_date}} &raquo; </span><a href="{{ SITEURL }}/{{ article.url }}">{{article.title}}</a></li>
+
+{% block content %}
+<div class="pure-g-r" id="layout">
+    {% include 'sidebar.html' %}
+    <div class="pure-u-1">
+      {% include 'tag_cloud.html' %}
+        <div class="content">
+            <h1 class="content-subhead">All posts</h1>
+            {% for article in dates %}
+                <div class="archive-item">
+                    <a href="{{ SITEURL }}/{{ article.author.url }}" title="See posts by {{ article.author }}">
+                        <!--{% if article.author_gravatar %}
+                            <img class="avatar" alt="{{ article.author }}" src="{{ article.author_gravatar }}">
+                        {% endif %}-->
+                    </a>
+                    <h5 class="archive-date">{{ article.date|strftime('%Y') }}</h5>
+                    <h4 class="archive-date">{{ article.date|strftime('%d %B') }}</h4>
+                    <div class="archive-post"><a href="{{ article.url }}">{{ article.title }}</a></div>
+                    <p class="archive-meta">{{ article.author }} in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></p>
+                </div>
             {% endfor %}
-     </ul>
-    {% endfor %}
-</dl>
+        </div>
+    </div>
+</div>
+{% include 'footer.html' %}
 {% endblock %}

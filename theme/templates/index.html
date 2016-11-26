@@ -1,17 +1,42 @@
-{% extends "base.html" %}
-{% block navclass %}active{%endblock%}
-
-{% block carousel %} {% include "carousel.html" %} {% endblock %}
+{% extends 'base.html' %}
 
 {% block content %}
-  <section id="content" class="content">
-  {% block content_title %} {% endblock content_title %}
-  {% for article in articles_page.object_list %}
-          <article class="hentry">
-                  <header> <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>
-                  <div class="entry-content"> {{ article.summary }} </div><!-- entry-content -->
-          </article>
-  {% endfor %}
-  {% include 'pagination.html' %}
-  </section>
+<div class="pure-g-r" id="layout">
+    {% include 'sidebar.html' %}
+    <div class="pure-u-1">
+        {% include 'tag_cloud.html' %}
+        <div class="content">
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
+                <!--<h1 class="content-subhead">
+                    {% block pagetitle %}
+                        {% if not articles_page.has_previous() %}
+                            Latest posts
+                        {% else %}
+                            Posts
+                        {% endif %}
+                    {% endblock pagetitle %}
+
+                    {% if articles_page.has_previous() %}
+                        &ndash; Page&nbsp;{{ articles_page.number }}
+                    {% endif %}
+                </h1>-->
+                {% include 'pagination.html' %}
+                {% for article in articles_page.object_list %}
+                    {% include 'post.html' %}
+                    {% if MATH is defined and not MATH['auto_insert'] %}
+			{% if page and page.mathjax or article and article.mathjax %}
+                            {% set mathjax = True %}
+                        {% endif %}
+                    {% endif %}
+                    {% if loop.last and mathjax is defined %}
+                        {{ MATHJAXSCRIPT }}
+                    {% endif %}
+                {% endfor %}
+                {% include 'pagination.html' %}
+                {% include 'footer.html' %}
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock content %}

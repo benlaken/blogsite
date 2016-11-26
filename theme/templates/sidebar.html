@@ -1,5 +1,22 @@
-<div class="container">
-  <!-- Twitter Widget below -->
-  <a class="twitter-timeline" href="https://twitter.com/benlaken" data-widget-id="497341986441920512">Tweets by @benlaken</a>
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<div class="sidebar pure-u">
+    <div class="cover-img" style="background-image: url('{{ COVER_IMG_URL }}')">
+        <div class="cover-body">
+            <header class="header">
+                <hgroup>
+                    <h1 class="brand-main"><a href="/">{{ SITENAME }}</a></h1>
+                    <p class="tagline">{{ TAGLINE }}</p>
+                {% for title, link in MENUITEMS %}
+                    <p class="links"><a href="{{ link }}">{{ title }}</a></p>
+                {% endfor %}
+                    <p class="social">
+                {% for title, link in SOCIAL %}
+                        <a href="{{ link }}">
+                            <i class="fa fa-{{ title }} fa-2x"></i>
+                        </a>
+                {% endfor %}
+                    <p>
+                </hgroup>
+            </header>
+        </div>
+    </div>
 </div>

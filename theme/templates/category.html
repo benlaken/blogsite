@@ -1,8 +1,3 @@
-{% extends "index.html" %}
-{% block title %} Articles in {{ category }} category - {{ SITENAME }}{% endblock %}
-{% block navclass %}{%endblock%}
-{% block archclass %} class="active"{%endblock%}
-{% block content_title %}
-<h2>Articles in the {{ category }} category</h2>
-{% endblock %}
-
+{% extends 'index.html' %}
+{% block title %}{{ category|striptags }} category // {{ super() }}{% endblock title %}
+{% block pagetitle %}Posts in '{{ category }}'{% endblock pagetitle %}
