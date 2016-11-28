@@ -13,10 +13,10 @@ TAGLINE = u'Earth science meanderings'
 DISQUS_SITENAME = 'www.benlaken.com'
 
 PATH = 'content'
-STATIC_PATHS = ['theme/static/', './theme/static/images/favicon.ico']
-EXTRA_PATH_METADATA = {'favicon.ico': {'path': 'theme/static/images/favicon.ico'}}
-PROFILE_IMAGE_URL = "theme/images/prfpic250.png"
-COVER_IMG_URL = "theme/images/tenerife.jpg"
+# STATIC_PATHS = ['theme/static/', './theme/static/images/favicon.ico']
+# EXTRA_PATH_METADATA = {'favicon.ico': {'path': 'theme/static/images/favicon.ico'}}
+PROFILE_IMAGE_URL = "images/prfpic250.png"
+COVER_IMG_URL = "images/tenerife.jpg"
 
 TIMEZONE = 'Europe/Madrid'
 
@@ -66,6 +66,6 @@ TAG_CLOUD_BADGE = True
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-THEME = "theme"
+THEME = "pure"
 
 OUTPUT_PATH = 'output'
