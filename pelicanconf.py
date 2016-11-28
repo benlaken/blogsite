@@ -14,7 +14,7 @@ DISQUS_SITENAME = 'www.benlaken.com'
 
 PATH = 'content'
 STATIC_PATHS = ['theme/static/', './theme/static/images/favicon.ico']
-EXTRA_PATH_METADATA = {'theme/static/images/favicon.ico': {'path': '.favicon.ico'}}
+EXTRA_PATH_METADATA = {'favicon.ico': {'path': 'theme/static/images/favicon.ico'}}
 PROFILE_IMAGE_URL = "theme/images/prfpic250.png"
 COVER_IMG_URL = "theme/images/tenerife.jpg"
 
