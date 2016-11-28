@@ -7,14 +7,14 @@ import os.path as op
 AUTHOR = u'Benjamin Laken'
 AUTHOR_EMAIL = 'benlaken@gmail.com'
 SITENAME = 'benlaken.com'
-SITEURL= 'http://benlaken.github.io/blogsite'
-#SITEURL = 'http://localhost:8000'
+SITEURL = 'http://benlaken.github.io/blogsite'
+# SITEURL = 'http://localhost:8000'
 TAGLINE = u'Earth science meanderings'
 DISQUS_SITENAME = 'www.benlaken.com'
 
 PATH = 'content'
-STATIC_PATHS = ['./theme/images/favicon.ico']
-EXTRA_PATH_METADATA = {'theme/images/favicon.ico': {'path': '.favicon.ico'}}
+STATIC_PATHS = ['theme/static/', './theme/static/images/favicon.ico']
+EXTRA_PATH_METADATA = {'theme/static/images/favicon.ico': {'path': '.favicon.ico'}}
 PROFILE_IMAGE_URL = "theme/images/prfpic250.png"
 COVER_IMG_URL = "theme/images/tenerife.jpg"
 
@@ -29,14 +29,14 @@ PLUGINS = ['gravatar', 'liquid_tags.img', 'liquid_tags.video',
            'share_post']
 
 # Feed generation is usually not desired when developing
-#FEED_ALL_ATOM = None
-#CATEGORY_FEED_ATOM = None
-#TRANSLATION_FEED_ATOM = None
-#AUTHOR_FEED_ATOM = None
-#AUTHOR_FEED_RSS = None
+# FEED_ALL_ATOM = None
+# CATEGORY_FEED_ATOM = None
+# TRANSLATION_FEED_ATOM = None
+# AUTHOR_FEED_ATOM = None
+# AUTHOR_FEED_RSS = None
 FEED_ALL_ATOM = u'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = u'feeds/%s.atom.xml'
-#TRANSLATION_FEED_ATOM = None
+# TRANSLATION_FEED_ATOM = None
 
 FEED_ALL_RSS = u'feeds/all.rss.xml'
 CATEGORY_FEED_RSS = u'feeds/%s.rss.xml'
