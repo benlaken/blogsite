@@ -7,7 +7,7 @@ Author: Benjamin Laken
 Email: benlaken@gmail.com
 Summary: Should scientists advocate?
 
-![](./theme/images/advc.jpg)
+![](./images/advc.jpg)
 
 ### The issue
 

@@ -7,7 +7,7 @@ Author: Benjamin Laken
 Email: benlaken@gmail.com
 Summary: Old Science re-worked with open science
 
-![alt text](./theme/images/banner_old_sci.png "Original image by James
+![alt text](./images/banner_old_sci.png "Original image by James
 Clarke")
 
 Last November someone e-mailed me a strange request, they wanted to use

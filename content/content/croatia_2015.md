@@ -7,7 +7,7 @@ Author: Benjamin Laken
 Email: benlaken@gmail.com
 Summary: A brief summary of a research trip to Croatia
 
-![](./theme/images/Ben_Jasa.jpg)
+![](./images/Ben_Jasa.jpg)
 
 I have just returned from a research trip in Croatia (8--19th
 September), with my friend and long-time collaborator [Dr. Jasa

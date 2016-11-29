@@ -11,7 +11,7 @@ It has been a while since my last post, and a lot has changed. My time at the De
 
 Last February I moved to a new type of job, a Research Software Developer. I am now part of a small team at the University College of London, which itself is part of the [Research IT services department](http://www.ucl.ac.uk/research-it-services). There are around eight of us working together supporting various projects from departments across the university, and we are linked to the UK's [Software Sustainability Institute](http://www.software.ac.uk). The team are the smiling people pictured! The goal of the team is essentially to use modern software development practices to improve research and researchers, making projects more reliable, usable, correct, and functional beyond the funding period of specific projects, and training researchers in tools and practices that support productivity and reproducibility. We are fostering Open Science practices: something that I find very motivating!
 
-![alt text](./theme/images/ucl_team.jpg "UCL RSD team summer 2016")
+![alt text](./images/ucl_team.jpg "UCL RSD team summer 2016")
 
 We also run Software Carpentry workshops: the next one is [coming up soon](http://ucl-rits.github.io/2016-06-22-UCL_software_carpentry/). It will be my first since I officially became an instructor, and the first which I will co-lead, so I am very excited about that.
 

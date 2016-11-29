@@ -7,7 +7,7 @@ Author: Benjamin Laken
 Email: benlaken@gmail.com
 Summary: TOSCAs summary of the field published
 
-![](./theme/images/TOSCA_group_web.png)
+![](./images/TOSCA_group_web.png)
 
 Over the past 4 years, more than 80 scientists from 20 countries across
 Europe have come together, in an EU-funded COST project, called

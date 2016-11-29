@@ -7,7 +7,7 @@ Author: Benjamin Laken
 Email: benlaken@gmail.com
 Summary: Reporting on an ongoing project to preserve scientific data
 
-![](./theme/images/old_machine.jpg)
+![](./images/old_machine.jpg)
 
 I recently attended a one-day evaluation workshop for the [PERCICLES
 Project](http://pericles-project.eu) as an invited reviewer. PERICLES

@@ -7,7 +7,7 @@ Author: Benjamin Laken
 Email: benlaken@gmail.com
 Summary: Relationship between human fertility and solar cycle debunked
 
-![alt text](./theme/images/solar_death.jpg)
+![alt text](./images/solar_death.jpg)
 
 Earlier this year some colleagues emailed around the latest paper
 claiming a strong causal relationship between the solar cycle and some
@@ -88,7 +88,7 @@ Indeed, the upper-class women have a similar fertility in years of solar
 maximum and solar minimum, while the lower-class women show a seemingly
 clear difference in the mean.
 
-![](./theme/images/Norway_solar_fig2.png)
+![](./images/Norway_solar_fig2.png)
 
 Fertility (mean + s.e.) in relation to solar activity for men and for
 women in relation to socio-economic status. \*p , 0.05. Dark grey bars
@@ -126,7 +126,7 @@ significant are the differences in the means between the low-class
 women's fertility at solar maximum *vs.* solar minimum? In particular, I
 want to know are these differences distinguishable from random samples.
 
-![](./theme/images/Solar_norway_boxplots.png)
+![](./images/Solar_norway_boxplots.png)
 
 Notched box-plots showing differences in fertility by gender, and social
 class (female only) during solar minimum (blue) and solar maximum (red)
@@ -160,7 +160,7 @@ evaluating (in this case it means that the solar maximum and minimum
 samples must have different Monte Carlo populations, as they had n = 145
 and n = 496 respectively).
 
-![](./theme/images/Solar_norway_distrib.png)
+![](./images/Solar_norway_distrib.png)
 
 Monte Carlo distributions of random cases drawn from the low-class women
 fertility data, with sample sizes matching the solar maximum (n=125) and

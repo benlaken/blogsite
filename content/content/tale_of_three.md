@@ -8,7 +8,7 @@ Email: benlaken@gmail.com
 Summary: How the academic career path works against reproducibility
 Series: Test_series_1
 
-![alt text](./theme/images/tale_of_three.png "Original image by Jorge Chan")
+![alt text](./images/tale_of_three.png "Original image by Jorge Chan")
 
 
 ### Meet the academics

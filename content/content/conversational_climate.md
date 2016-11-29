@@ -7,7 +7,7 @@ Author: Benjamin Laken
 Email: benlaken@gmail.com
 Summary: A post based on a discussion thread from Youtube
 
-![](./theme/images/conv_clim.png)
+![](./images/conv_clim.png)
 
 This post differs from my usual fare as it follows the format of an FAQ
 of sorts. For me, it is representative of a conversation I have had a

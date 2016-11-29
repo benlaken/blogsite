@@ -16,7 +16,7 @@ in discrete and often-dramatic outbreak events, are suspended in the
 air. The Calima conditions last from hours to days. During this time
 dramatic changes occur in the local climate.
 
-![](./theme/images/terra.png)
+![](./images/terra.png)
 
 Terra MODIS false colour image of a strong Calima event over the Canary
 Islands
@@ -55,7 +55,7 @@ in clouds found to be influential as far away as Alaska; the dust has
 even been indirectly linked to the death of coral in the Caribbean by
 providing a vector for spores producing Sea Fan disease.
 
-![](./theme/images/Haboob.png)
+![](./images/Haboob.png)
 
 A dramatic Haboob over Arizona, USA - much dust is entrained over the
 Sahara by similar Haboobs over Africa. These occur seasonally in
@@ -75,7 +75,7 @@ campaigns and other studies, scientists have pinpointed key regions
 important to the entrainment of dust over the Sahara, and the mechanisms
 by which the dust is entrained and exported and eventually deposited.
 
-![](./theme/images/Meteosat.png)
+![](./images/Meteosat.png)
 
 The immense scale of the dust outbreaks can be appreciated from 36,000
 km above the Earth, courtesy of the thermal infra-red (IR) channel from

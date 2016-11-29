@@ -7,7 +7,7 @@ Author: Benjamin Laken
 Email: benlaken@gmail.com
 Summary: How to begin on the path to an Open Science workflow
 
-![alt text](./theme/images/journey_banner.jpg "Original image by Hanna Norlin")
+![alt text](./images/journey_banner.jpg "Original image by Hanna Norlin")
 
 ### A familiar situation?
 

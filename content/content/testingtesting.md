@@ -8,7 +8,7 @@ Email: benlaken@gmail.com
 Summary: Discovering the importance of code testing
 Series: Test_series_1
 
-![alt text](./theme/images/code_banner.jpg "Original image by James
+![alt text](./images/code_banner.jpg "Original image by James
 Clarke")
 
 Regression testing, unit tests, Test driven development, automated

@@ -7,7 +7,7 @@ Author: Benjamin Laken
 Email: benlaken@gmail.com
 Summary: A case of peer-review gone awry
 
-![alt text](./theme/images/monsoon_india.png "Original image by Jorge Chan")
+![alt text](./images/monsoon_india.png "Original image by Jorge Chan")
 
 This story starts around 2012, when I received a request to review a
 paper on solar activity and the Indian Monsoon from the journal
