@@ -6,7 +6,7 @@ import os.path as op
 
 AUTHOR = u'Benjamin Laken'
 AUTHOR_EMAIL = 'benlaken@gmail.com'
-SITENAME = 'benlaken.com'
+SITENAME = u'benlaken.com'
 SITEURL = 'https://benlaken.github.io/blogsite'
 # SITEURL = 'http://localhost:8000'
 TAGLINE = u'Earth science meanderings'
@@ -16,7 +16,7 @@ PATH = 'content'
 # STATIC_PATHS = ['theme/static/', './theme/static/images/favicon.ico']
 # EXTRA_PATH_METADATA = {'favicon.ico': {'path': 'theme/static/images/favicon.ico'}}
 PROFILE_IMAGE_URL = "images/prfpic250.png"
-COVER_IMG_URL = "images/tenerife.jpg"
+COVER_IMG_URL = "./images/tenerife.jpg"
 
 TIMEZONE = 'Europe/Madrid'
 
