@@ -69,7 +69,7 @@ evidence suggests that such cycles they do exist at a variety of
 horizontal and vertical scales (which we provide a brief discussion of
 in the paper) and work on this topic continues.
 
-![](./theme/images/Zoom_period.png)
+![](images/Zoom_period.png)
 
 >Lomb-Scargle periodogram over the European region for seasonally
 de-trended CO data. A sub-plot shows a zoom on the only region of the
@@ -94,7 +94,7 @@ carbon dioxide to be increasing over the past decade ([as they have been
 doing](http://keelingcurve.ucsd.edu)) whilst carbon monoxide
 concentrations can simultaneously decrease.
 
-![](./theme/images/Fig_global.png)
+![](images/Fig_global.png)
 
 > Globally averaged measurements of CO from MOPITT (Ver 5, Lev 3 combined
 product) with 360-day running mean (red line). Significant linear trend
@@ -136,7 +136,7 @@ atmospheric pollution, with significant implications for air quality and
 health over the regions, such as suggested by [Akimoto
 (2003)](http://www.sciencemag.org/content/302/5651/1716.short).
 
-![](./theme/images/Spatial_fig.png)
+![](images/Spatial_fig.png)
 
 > Linear trends in CO between March 2000 and April 2012 for (a) all
 pixels, and (b) statistically significant (*p* < 0.05 two-tailed

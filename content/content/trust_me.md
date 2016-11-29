@@ -7,7 +7,7 @@ Author: Benjamin Laken
 Email: benlaken@gmail.com
 Summary: More-often-than-not researchers expect us to take their results on faith
 
-![](./theme/images/lego_banner.png)
+![](./images/lego_banner.png)
 
 It may surprise a few people to learn that this cliché is more-or-less accurate when it comes to most modern research. More-often-than-not researchers expect us to take their results on faith.
 
