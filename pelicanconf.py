@@ -10,7 +10,7 @@ SITENAME = 'benlaken.com'
 SITEURL = 'https://benlaken.github.io/blogsite'
 # SITEURL = 'http://localhost:8000'
 TAGLINE = u'Earth science meanderings'
-DISQUS_SITENAME = 'www.benlaken.com'
+DISQUS_SITENAME = 'benlaken.blogsite'
 
 PATH = 'content'
 # STATIC_PATHS = ['theme/static/', './theme/static/images/favicon.ico']

@@ -23,5 +23,5 @@ EXTRA_PATH_METADATA = {'extra/travis.yml': {'path': '.travis.yml'}}
 
 # Following items are often useful when publishing
 
-#DISQUS_SITENAME = ""
+DISQUS_SITENAME = "benlaken.blogsite"
 #GOOGLE_ANALYTICS = ""
