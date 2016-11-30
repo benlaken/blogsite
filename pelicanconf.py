@@ -49,7 +49,7 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 
 # Social widget
 SOCIAL = (
-         ('github-square', 'https://github.com/benlakentw'),
+         ('github-square', 'https://github.com/benlaken'),
          ('twitter-square', 'https://twitter.com/benlaken'),
          ('linkedin-square', 'https://www.linkedin.com/in/benjamin-laken-a3089087'),
          ('book', 'https://impactstory.org/u/0000-0003-2021-6258/publications'),
