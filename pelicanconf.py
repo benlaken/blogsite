@@ -6,11 +6,13 @@ import os.path as op
 
 AUTHOR = u'Benjamin Laken'
 AUTHOR_EMAIL = 'benlaken@gmail.com'
-SITENAME = u'benlaken.com'
+SITENAME = u'Benjamin Laken'
 SITEURL = 'https://benlaken.github.io/blogsite'
 # SITEURL = 'http://localhost:8000'
 TAGLINE = u'Earth science meanderings'
 DISQUS_SITENAME = 'benlaken.blogsite'
+
+DISPLAY_PAGES_ON_MENU = True
 
 PATH = 'content'
 # STATIC_PATHS = ['theme/static/', './theme/static/images/favicon.ico']
