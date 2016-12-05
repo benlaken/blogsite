@@ -17,7 +17,7 @@ DISPLAY_PAGES_ON_MENU = True
 PATH = 'content'
 # STATIC_PATHS = ['theme/static/', './theme/static/images/favicon.ico']
 # EXTRA_PATH_METADATA = {'favicon.ico': {'path': 'theme/static/images/favicon.ico'}}
-PROFILE_IMAGE_URL = "images/prfpic250.png"
+PROFILE_IMAGE_URL = "https://www.gravatar.com/avatar/69dcde5b90cca46e5111cd8c306d155d"
 COVER_IMG_URL = "images/tenerife.jpg"
 
 TIMEZONE = 'Europe/Madrid'
