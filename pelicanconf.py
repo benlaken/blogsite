@@ -11,7 +11,7 @@ SITENAME = u'Benjamin Laken'
 SITEURL = 'https://benlaken.com'
 # SITEURL = 'http://localhost:8000'
 TAGLINE = u'Earth science meanderings'
-DISQUS_SITENAME = 'benlaken.com'
+DISQUS_SITENAME = 'www-benlaken-com
 
 DISPLAY_PAGES_ON_MENU = True
 
