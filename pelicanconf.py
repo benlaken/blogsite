@@ -7,10 +7,11 @@ import os.path as op
 AUTHOR = u'Benjamin Laken'
 AUTHOR_EMAIL = 'benlaken@gmail.com'
 SITENAME = u'Benjamin Laken'
-SITEURL = 'https://benlaken.github.io/blogsite'
+# SITEURL = 'https://benlaken.github.io/blogsite'
+SITEURL = 'https://benlaken.com'
 # SITEURL = 'http://localhost:8000'
 TAGLINE = u'Earth science meanderings'
-DISQUS_SITENAME = 'benlaken.blogsite'
+DISQUS_SITENAME = 'benlaken.com'
 
 DISPLAY_PAGES_ON_MENU = True
 

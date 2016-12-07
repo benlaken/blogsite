@@ -10,7 +10,8 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'https://benlaken.github.io/blogsite'
+SITEURL = 'https://benlaken.com'
+# SITEURL = 'https://benlaken.github.io/blogsite'
 RELATIVE_URLS = True
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
@@ -23,5 +24,5 @@ EXTRA_PATH_METADATA = {'extra/travis.yml': {'path': '.travis.yml'}}
 
 # Following items are often useful when publishing
 
-DISQUS_SITENAME = "benlaken.blogsite"
-#GOOGLE_ANALYTICS = ""
+DISQUS_SITENAME = "benlaken.com"
+GOOGLE_ANALYTICS = "UA-10815370-4"
