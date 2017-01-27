@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Benjamin Laken, Earth science meanderings">
+
+        <link rel="alternate"  href="https://benlaken.com/feeds/all.atom.xml" type="application/atom+xml" title="Benjamin Laken Full Atom Feed"/>
+        <link rel="alternate" href="https://benlaken.com/feeds/all.rss.xml" type="application/rss+xml" title="Benjamin Laken Full RSS Feed"/>
+
+        <title>Academic archetypes: an anti-pattern for reproducibility // Benjamin Laken // Earth science meanderings</title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./theme/css/pygments.css">
+    <link rel="stylesheet" href="./theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="./theme/js/main.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+<div class="sidebar sidebar-article pure-u">
+    <header class="header-article">
+        <hgroup>
+            <!--<a href="./author/benjamin-laken.html" title="See posts by Benjamin Laken">-->
+                    <a href="./pages/about-me.html"><img class="avatar" alt="Benjamin Laken" src="https://www.gravatar.com/avatar/69dcde5b90cca46e5111cd8c306d155d"></a>
+            <!--</a>-->
+            <h2 class="article-info">Benjamin Laken</h2>
+            <p class="social">
+                      <a href="https://github.com/benlaken">
+                          <i class="fa fa-github-square fa-2x article-icons select_item"></i>
+                      </a>
+                      <a href="https://twitter.com/benlaken">
+                          <i class="fa fa-twitter-square fa-2x article-icons select_item"></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/benjamin-laken-a3089087">
+                          <i class="fa fa-linkedin-square fa-2x article-icons select_item"></i>
+                      </a>
+                      <a href="https://impactstory.org/u/0000-0003-2021-6258/publications">
+                          <i class="fa fa-book fa-2x article-icons select_item"></i>
+                      </a>
+            <p>
+            <!--<small class="about-author"></small>-->
+            <h5></h5>
+            <p>Tue 06 September 2016</p>
+            <a href=".">
+                <i class="fa fa-home fa-lg select_item"></i><span class="icon-label select_item"><span> Home </span></span>
+              </a>
+        </hgroup>
+    </header>
+</div>    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Academic archetypes: an anti-pattern for reproducibility</h1>
+                        <p class="post-meta">
+                            <i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span>                                 <a class="post-category" href="./tag/reproducibility.html">Reproducibility</a>
+                                <a class="post-category" href="./tag/software.html">Software</a>
+                                <a class="post-category" href="./tag/science.html">Science</a>
+                        </p>
+                </header>
+            </section>
+            <p><img alt="alt text" src="./images/tale_of_three.png" title="Original image by Jorge Chan" /></p>
+<h3>Meet the academics</h3>
+<p>Raoul is a diligent and hard working PhD student: He immerses himself in his subject, and feels like there is so much to learn with so little time. He may often feel on the outside looking in, racked with doubt, wondering whether he could ever contribute something meaningful to their field. His supervisor has given him some old code, allegedly related to an unrecognisably early version of their PhD project, maybe in something like FORTRAN or Matlab. Peter doesn't have time to stop and smell the roses, he has to get cracking to produce results, write papers, defend, and get on the fast-track to academic success! For him, his main priority is learning his subject, and generating a new contribution to his field.</p>
+<p>Tasha has put in the endless hours grinding, made it through the trauma of her PhD with only minor mental scarring, and found that she now has more work and responsibilities than ever, but with even less time! She needs to get uber serious, as she tries to publish papers from her thesis, go to conferences, and produce 'trend-setting' new research to become known in her field and make it out of 'permadoc hell'. She might have a steadily growing collection of hacky scripts to process their data, or maybe even some monolithic Excel spreadsheets with VBA macros. She couldn't possibly change the way she works now: it would be a huge set-back not only to loose all that past work, but also to invest all the time learning new tools. And hey, what she has been doing has worked up till now---no journal has ever even asked about her code---so it would be foolish to waste the time changing now.</p>
+<p>Assistant Professor Smith has worked hard and made many sacrifices to get where she is, yet she is going to have to push even harder to reach tenure. Time for her to rise to prominence in her field and earn international renown. She will likely travel several times each month, and compete in an ever more cut-throat environment for funding, whilst simultaneously building a dynamic research group populated with people like Postdoc Tasha and PhD Student Raoul. All to prove to her university that she has what it takes to be a permanent staff member! Not only would Assistant Professor Smith never dream of going back to square 1 and learning basic working methods again, but in reality she probably rarely does any research herself any more. Instead, she directs her underlings when she has time, and encourages them to re-use and build on whatever pipelines and scripts she built-up on her climb to her current post, as that has the least mental overhead for her to lend a hand when her minions get into trouble.</p>
+<h3>What's the problem?</h3>
+<p>If successful, Assistant Professor Smith will join the ranks of tenured professors in her University and take on more teaching and administration responsibilities. Over time, her practices may be enshrined in courseware and become part of the institutional practices at their University.</p>
+<p>In terms of enabling best research practices to spread, these profiles have an anti-pattern built into them. Bad practices are left uncorrected as there is no incentive to improve and refine old work, optimise working methods for reproducibility. In fact, stopping to improve existing research could be a serious competitive disadvantage: You have to remember that at each stage up this career pyramid there are far-fewer positions, and the competition and stakes becomes far greater. By the time Assistant Professor Smith goes after their tenure, they have almost certainly invested 100% of their adult life into getting their position, professionally and personally. To let up for even a moment could be the difference between being the best, and being the second best candidate --- a disaster, as their peers are all seeking the same goal.</p>
+<p>So academics become trapped in an endless race against the clock and their peers to produce new results and gain all the kudos possible. As a result, many research pipe-lines simply remain black-boxes, perhaps no better than random-number generators. Many researchers have no immediate way to reliably check their various scripts and disjointed tools are not producing incorrect results, and are not aware of how to go about doing so even if they wanted to.</p>
+<p>Moreover, the lifetime of academic software, the key component driving modern science, is usually strongly correlated to the length of the authors contracts. Usually a researchers main concern revolves around getting code working on their local machine, and producing results one time, often with multiple (undocumented) intermediate processing steps. Thus, there is a strong tendency for projects to generate abandonware: unmaintained software which rapidly degrades into obsolescence.</p>
+<p>How can Student Raoul, in the course of their arduous career journey to the level of Professor Smith, hope to break this anti-pattern? When should they start? And what might the impacts of doing so be to their career? Should they even bother? Over the course of the next few blog-posts I hope to address this question and more!</p>
+<p>Original banner image by <a href="http://www.phdcomics.com/comics/archive.php?comicid=1537">Jorge Chan</a>.</p>
+            <div class="hr"></div>
+            <a href="#" class="go-top">Go Top</a>
+    <section>
+        <p id="post-share-links">
+            Share this post:
+            <a class="select_item" href="http://twitter.com/home?status=b'Academic%20archetypes%3A%20an%20anti-pattern%20for%20reproducibility%20https%3A//benlaken.com/academic_archetypes.html'" target="_blank" title="Share on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            &middot;
+            <a class="select_item" href="http://www.facebook.com/sharer/sharer.php?u=https%3A//benlaken.com/academic_archetypes.html" target="_blank" title="Share on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            &middot;
+            <a class="select_item" href="https://plus.google.com/share?url=https%3A//benlaken.com/academic_archetypes.html" target="_blank" title="Share on Google Plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            &middot;
+            <a class="select_item" href="mailto:?subject=Academic%20archetypes%3A%20an%20anti-pattern%20for%20reproducibility&amp;body=https%3A//benlaken.com/academic_archetypes.html" target="_blank" title="Share via Email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </p>
+    </section>
+<div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = "www-benlaken-com"; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div><footer class="footer">
+    <h3><a class="select_item" href="./archives.html" > Archive</a></h3>
+    <p>&copy; Benjamin Laken &ndash;
+        Built with a modified <a href="https://github.com/benlaken/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-10815370-4");
+            pageTracker._trackPageview();
+            } catch(err) {}
+    </script>
+</body>
+</html>

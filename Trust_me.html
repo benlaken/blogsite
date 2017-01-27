@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Benjamin Laken, Earth science meanderings">
+
+        <link rel="alternate"  href="https://benlaken.com/feeds/all.atom.xml" type="application/atom+xml" title="Benjamin Laken Full Atom Feed"/>
+        <link rel="alternate" href="https://benlaken.com/feeds/all.rss.xml" type="application/rss+xml" title="Benjamin Laken Full RSS Feed"/>
+
+        <title>Trust me, I'm a doctor // Benjamin Laken // Earth science meanderings</title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./theme/css/pygments.css">
+    <link rel="stylesheet" href="./theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="./theme/js/main.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+<div class="sidebar sidebar-article pure-u">
+    <header class="header-article">
+        <hgroup>
+            <!--<a href="./author/benjamin-laken.html" title="See posts by Benjamin Laken">-->
+                    <a href="./pages/about-me.html"><img class="avatar" alt="Benjamin Laken" src="https://www.gravatar.com/avatar/69dcde5b90cca46e5111cd8c306d155d"></a>
+            <!--</a>-->
+            <h2 class="article-info">Benjamin Laken</h2>
+            <p class="social">
+                      <a href="https://github.com/benlaken">
+                          <i class="fa fa-github-square fa-2x article-icons select_item"></i>
+                      </a>
+                      <a href="https://twitter.com/benlaken">
+                          <i class="fa fa-twitter-square fa-2x article-icons select_item"></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/benjamin-laken-a3089087">
+                          <i class="fa fa-linkedin-square fa-2x article-icons select_item"></i>
+                      </a>
+                      <a href="https://impactstory.org/u/0000-0003-2021-6258/publications">
+                          <i class="fa fa-book fa-2x article-icons select_item"></i>
+                      </a>
+            <p>
+            <!--<small class="about-author"></small>-->
+            <h5></h5>
+            <p>Fri 30 September 2016</p>
+            <a href=".">
+                <i class="fa fa-home fa-lg select_item"></i><span class="icon-label select_item"><span> Home </span></span>
+              </a>
+        </hgroup>
+    </header>
+</div>    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Trust me, I'm a doctor</h1>
+                        <p class="post-meta">
+                            <i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span>                                 <a class="post-category" href="./tag/reproducibility.html">Reproducibility</a>
+                                <a class="post-category" href="./tag/journals.html">Journals</a>
+                                <a class="post-category" href="./tag/research.html">Research</a>
+                                <a class="post-category" href="./tag/software.html">Software</a>
+                        </p>
+                </header>
+            </section>
+            <p><img src="./images/lego_banner.png" alt=""></p>
+<p>It may surprise a few people to learn that this cliché is more-or-less accurate when it comes to most modern research. More-often-than-not researchers expect us to take their results on faith.</p>
+<p>The workflows that researchers use to produce results are now, almost without exception, based on extremely complex software -- more complex than even than the researchers themselves usually appreciate! They typically involve multiple stages of data processing, perhaps spread across several people and several computer systems, with analysis scripts written in various languages, intermediate stages of manual file manipulations, maybe even the odd spreadsheet program. The core of an analysis may often be written in a rush to meet one deadline or another. And this is usually done without documentation, tests, or version control, to ultimately produce a figure or value that makes up 'a result'. The net effect of this creates a situation ominously named the <a href="https://en.wikipedia.org/wiki/Replication_crisis">replication crisis</a>.</p>
+<p>An experienced software developer friend-of-mine once remarked, when looking at a typical example of a modern research pipeline<sup id=sf-Trust_me-1-back><a href=#sf-Trust_me-1 class=simple-footnote title=" A pipeline is a colloquial way of referring to all parts of the process of turning raw data into a final analysis">1</a></sup>, that 'it was no better than a random number generator'. The pipeline was undoubtedly of significant importance to the group that made it. But he knew that no matter if you are an unpaid PhD student, or a highly-paid developer working for Google, code has bugs. Many bugs. They are hard enough to find when you use good software development practices, but an opaque research pipeline makes debugging virtually impossible. It is pure arrogance to think that as a researcher you have perfectly functional software on what is essentially a first release, and people should just be satisfied to accept your results at face value!</p>
+<p>Most mainstream, respectable journals now support Open Access and also highlight a commitment to reproducibility to some degree, usually by advising the authors to place their data or code in accessible databases or supplying them as supplementary materials.</p>
+<p>In my experience, reviewers almost never attempt to verify that they can reproduce an authors result, or examine whether the steps they have taken in their analysis pipeline are flawed in some way that might compromise the papers conclusions. In fact, as a reviewer, requesting data or code in order to check the work you have been given to check is usually met with quizzical and uncertain replies -- as if neither the editors or authors know what to do next!</p>
+<p>Typically, authors want to avoid giving code out at all costs: they tend to view such requests as an unreasonable level of scrutiny, or even a loss of intellectual property. They are also well-aware that if people care to look in detail they are likely to find the metaphorical duct-tape holding their research together. (Duct-tape, which they rationalise, they will address in the next iteration of their work.) If a reviewer does ask to see code, usually what happens next is that they are treated like a biased or unreasonable reviewer, and the authors may try to encourage the editors to favour the opinions of the other reviewers who didn't rock the boat. Even if journals state in their publication policies sentiments that 'data and code used to produce results must be made available with publication of the manuscripts', this is rarely enforced.</p>
+<p>Consequently, readers are usually left to fend for themselves when it comes to piecing together what authors have actually done (which may be all-but un-intuitable based on the text of a paper). The only ways skeptical readers can decide whether or not to put stock in what they are reading is usually by a mix of a papers logical consistency (<a href="https://blogs.scientificamerican.com/doing-good-science/evaluating-scientific-claims-or-do-we-have-to-take-the-scientists-word-for-it/">see here</a>), agreement to meta-studies, or the reputation of the authors or institutes to which they are associated.</p>
+<p>As <a href="https://twitter.com/raymondh">Raymond Hettinger</a> says:</p>
+<blockquote>
+<p>"There has to be a better way!"</p>
+</blockquote>
+<p>As analysis pipelines have become increasingly complex, simply saying X result was produced with Y is not useful. It is well understood that more information is needed, such as metadata about the researchers systems, library versions, automated workflows or makefiles. Many professions, including software developers, have reached the understanding that reproducing peoples results is a difficult problem. (Hence the enormous popularity of systems such as Docker and Vagrant.)</p>
+<p>A difficult reality is that while most researchers are able to cobble together steps to go from raw data to a result, they are not able to do so in anything close to a reproducible manner -- this is important if they want to use their analysis as evidence to affect society! There are two options to address this:</p>
+<p><em>1. Improve the training and awareness of researchers, and enforce practices that allow for reproducibility.</em></p>
+<p>There are now many resources encouraging researchers to <a href="http://www.nature.com/news/2010/101013/full/467753a.html">publish their code</a> or showing them how to adopt <a href="http://www.nature.com/news/interactive-notebooks-sharing-the-code-1.16261">better tools for reproducibility</a>. Training is being encouraged by non-profit groups such as <a href="http://software-carpentry.org">Software Carpentry</a> and <a href="http://www.datacarpentry.org">Data Carpentry</a>, driving increased awareness is spreading across disciplines. However, it is not spreading evenly, leading almost to a two-tier system of 1) researchers who are updating their methods and attempting to work with best practices, vs. 2) old-school researchers, who stalwartly stick to old methods, and in turn pass those practices to their students (see my last blog post for more on this). Hopefully at some point a critical mass will be achieved, and the minority of hold-outs who refuse to support the reproducibility of their work will be ostracised. (Happy thoughts.)</p>
+<p><em>2. Create a specialist position, such as <a href="http://www.rse.ac.uk/who.html">Research Software Engineers</a>, and organisations such as the <a href="https://www.software.ac.uk">Software Sustainability Institute</a>,  whose purpose  <br>
+is to work with researchers, bringing their expertise in creating research software to domain specific problems as needed.</em></p>
+<p>For this, universities must essentially create a new class of position; one enticing enough to attract and retain talented people that understand both how research works, and also have a good grasp of software development.</p>
+<p>In the meantime, we are in a state where you have no good option to determine the reliability of published results, short of spending an inordinate amount of time as a scientific Sherlock Holmes; painstakingly piecing together an analysis from a few public datasets and some lonely clues.</p>
+<p>Banner image credit <a href="https://www.flickr.com/photos/spacebarpark/">Kevin spacebarpark</a></p><ol class=simple-footnotes><li id=sf-Trust_me-1> A pipeline is a colloquial way of referring to all parts of the process of
+turning raw data into a final analysis <a href=#sf-Trust_me-1-back class=simple-footnote-back>↩</a></li></ol>
+            <div class="hr"></div>
+            <a href="#" class="go-top">Go Top</a>
+    <section>
+        <p id="post-share-links">
+            Share this post:
+            <a class="select_item" href="http://twitter.com/home?status=b'Trust%20me%2C%20I%27m%20a%20doctor%20https%3A//benlaken.com/Trust_me.html'" target="_blank" title="Share on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            &middot;
+            <a class="select_item" href="http://www.facebook.com/sharer/sharer.php?u=https%3A//benlaken.com/Trust_me.html" target="_blank" title="Share on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            &middot;
+            <a class="select_item" href="https://plus.google.com/share?url=https%3A//benlaken.com/Trust_me.html" target="_blank" title="Share on Google Plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            &middot;
+            <a class="select_item" href="mailto:?subject=Trust%20me%2C%20I%27m%20a%20doctor&amp;body=https%3A//benlaken.com/Trust_me.html" target="_blank" title="Share via Email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </p>
+    </section>
+<div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = "www-benlaken-com"; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div><footer class="footer">
+    <h3><a class="select_item" href="./archives.html" > Archive</a></h3>
+    <p>&copy; Benjamin Laken &ndash;
+        Built with a modified <a href="https://github.com/benlaken/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-10815370-4");
+            pageTracker._trackPageview();
+            } catch(err) {}
+    </script>
+</body>
+</html>

@@ -1,0 +1,1455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Benjamin Laken</title><link href="https://benlaken.com/" rel="alternate"></link><link href="https://benlaken.com/feeds/benjamin-laken.atom.xml" rel="self"></link><id>https://benlaken.com/</id><updated>2017-01-26T11:09:00+01:00</updated><entry><title>First days as a Data Scientist at Vizzuality</title><link href="https://benlaken.com/Vizzuality_post1.html" rel="alternate"></link><published>2017-01-26T11:09:00+01:00</published><updated>2017-01-26T11:09:00+01:00</updated><author><name>Benjamin Laken</name></author><id>tag:benlaken.com,2017-01-26:Vizzuality_post1.html</id><summary type="html">&lt;p&gt;&lt;img alt="" src="./images/madrid_banner.png" /&gt;&lt;/p&gt;
+&lt;p&gt;After having spent the last 10 years in Universities and Research Institutes,
+I had seen many colleagues and friends make the shift from the
+public to the private-sector, particularly into Data Science roles. I was unsure what life would be
+like after making the change myself. I am now two weeks in to my transition to
+life as a Data Scientist at &lt;a href="http://www.vizzuality.com"&gt;Vizzuality&lt;/a&gt;, and so far it has been quite exciting!&lt;/p&gt;
+&lt;p&gt;There are many interesting projects being developed here that feed directly
+to policy-makers and influence public-opinion. Projects like the &lt;a href="http://www.vizzuality.com/projects/global-forest-watch"&gt;Global Forest Watch&lt;/a&gt;. And in some ways that feels a lot
+like the day-to-day life in a high-quality university group, where people work on projects
+or synthesis reports which reach the desks of critical people. Except, whereas
+universities felt bureaucratic and institutional, Vizzuality feels dynamic and modern: It
+works at a totally different pace, and generally aims at a far larger and more impactful
+audience. Of course there is also the dimension of a profit motive behind the
+private-sector, but it seems that at Vizzuality, the ethos is to actively push
+towards projects and services that raise awareness,
+and encourage responsible stewardship of our ecosystem at a planetary-scale.&lt;/p&gt;
+&lt;p&gt;Fortunately for me, my past year as a &lt;a href="http://www.rse.ac.uk/who.html"&gt;Research Software Engineer&lt;/a&gt; at University College London
+prepared me for the day-to-day tasks which I am currently working on:
+As more time goes on, it's clearer-and-clearer that the &lt;a href="http://www.ucl.ac.uk/research-it-services/research-software-development"&gt;group&lt;/a&gt; that UCL
+(and &lt;a href="https://iris.ucl.ac.uk/iris/browse/profile?upi=JHETH53"&gt;Dr. James Heatherington&lt;/a&gt; in particular) created is the future-face of
+Research in the University setting: the abstraction of the skills required to perform a
+research project from the domain specific knowledge; creating effective teams
+of dynamic computer-science literate people, who understand the scientific method,
+and the way knowledge is created. It was, in fact, the creation of a Data Science group,
+focused on research and reproducibility!&lt;/p&gt;
+&lt;p&gt;Consequently, coming from this group, I felt pretty happy to hit the ground running at Vizzuality, and in the past two
+weeks at Vizzuality, I have had a chance to help them develop a new Open Source Python library called &lt;a href="https://github.com/Vizzuality/sql2gee"&gt;sql2gee&lt;/a&gt;, which converts
+SQL requests into calls to &lt;a href="https://earthengine.google.com"&gt;Google's Earth Engine&lt;/a&gt;, and should let us easily use the
+data on that platform in future Vizzuality products. So this has been very positive
+for me so far, as I happen to love the Earth Engine, Open Source, and Python, not
+to mention the prospect of contributing to projects that could contribute to creating a
+more sustainable future. Exactly why I, and many others, became scientists in the first place.&lt;/p&gt;</summary><category term="Open Source"></category><category term="Python"></category><category term="Data Science"></category></entry><entry><title>Pelican + Github = A better way to website!</title><link href="https://benlaken.com/New_static_site.html" rel="alternate"></link><published>2017-01-02T15:52:00+01:00</published><updated>2017-01-02T15:52:00+01:00</updated><author><name>Benjamin Laken</name></author><id>tag:benlaken.com,2017-01-02:New_static_site.html</id><summary type="html">&lt;p&gt;&lt;img alt="" src="./images/pelican_banner.png" /&gt;&lt;/p&gt;
+&lt;p&gt;As the astute recurring visitor may have noticed, I have a new site! I have been told that it doesn't look as impressive as my old one just yet. But I assure you that the new site is certainly forward progress, as it will be much easier for me to maintain and develop in the future.&lt;/p&gt;
+&lt;p&gt;Since around 2010, I hosted my website with Dreamhost, and made it using &lt;a href="https://en.wikipedia.org/wiki/Django_(web_framework)"&gt;Django&lt;/a&gt; and SQL.
+While it was fun to have a reason to play with those tools, it was definitely overkill for my needs, and publishing new content was harder than it needed to be. Not to mention I never quite managed to find time to debug the site fully, or keep it's code it up-to-date.&lt;/p&gt;
+&lt;p&gt;Fortunately, those days are now over thanks to Github, &lt;a href="https://github.com/getpelican/pelican/"&gt;Pelican&lt;/a&gt;, and &lt;a href="https://travis-ci.org"&gt;Travis&lt;/a&gt;! My new site is static, generated using Pelican, with &lt;a href="http://jinja.pocoo.org"&gt;Jninja2&lt;/a&gt; templates. The posts are all written in markdown, and creating new content is now as easy as typing out a quick plain-text doc, pushing it to the &lt;a href="https://github.com/benlaken/blogsite"&gt;blogs Github repo&lt;/a&gt;, and then letting Travis do the work of automatically pulling the repo, building the site, and pushing the actual web pages to gh-pages branch on Github, where they are served with my old top-level domain!&lt;/p&gt;
+&lt;p&gt;All this means the site is much simpler, cheaper, and more lightweight, and, more importantly, I should be able to focus much more on content. Horray!  &lt;/p&gt;
+&lt;p&gt;If you want to see a guide of how to do this for yourself, I found a few, such as &lt;a href="https://marpat.github.io/python-anaconda-and-pelican-on-windows.html"&gt;this one&lt;/a&gt;. You can also grab a copy of my repo, and play with it. Feel free to use the template, a forked version of the &lt;a href="https://github.com/benlaken/pure"&gt;Pure theme&lt;/a&gt; and adapted. If you are looking for an even easier solution you can also do the same thing using the &lt;a href="https://jekyllrb.com/docs/github-pages/"&gt;Jekyll&lt;/a&gt;, but personally I wanted a Python-based solution.&lt;/p&gt;
+&lt;p&gt;One complication of this set up is that you have to give Travis an ssh key to push to your repo, so this requires you to set up Travis deploy key, but it is straightforward (&lt;a href="https://docs.travis-ci.com/user/private-dependencies/"&gt;details here&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;A nice feature has been Pelican's plugins, which are easy to use. I simply added the plugin repo as a submodule to my blogsite, then declare which one I want to use in the settings file, and
+viola: simple YouTube embedding, Tag-clouds, footnotes, formatted code with syntax highlighting, and loads of other nice features to play with!&lt;/p&gt;</summary><category term="Python"></category></entry><entry><title>How can I begin to improve my workflow?</title><link href="https://benlaken.com/how_to_begin.html" rel="alternate"></link><published>2016-10-01T09:49:00+02:00</published><updated>2016-10-01T09:49:00+02:00</updated><author><name>Benjamin Laken</name></author><id>tag:benlaken.com,2016-10-01:how_to_begin.html</id><summary type="html">&lt;p&gt;&lt;img alt="alt text" src="./images/journey_banner.jpg" title="Original image by Hanna Norlin" /&gt;&lt;/p&gt;
+&lt;h3&gt;A familiar situation?&lt;/h3&gt;
+&lt;p&gt;Are you are toiling away at your project with nothing but your wits, a few hand-me-down scripts, and a supervisor who only has time to interact with you as they hurriedly walk down the corridor on their way to their next meeting? Perhaps it seems like it will be much easier to just get to work hammering away at your task, the way you were originally shown?&lt;/p&gt;
+&lt;p&gt;Maybe you saw a talk or read an article about the world of Open Science, and you are starting to have a strong suspicion that there must be a better way to work than the approach you have been using up-till-now: one that may even give you skills that people in the land that lays beyond academia will find attractive! You have heard about tools like Python, version control, and this vague idea of Open Science. But in practical terms, how can you begin?&lt;/p&gt;
+&lt;p&gt;You might have a project with a file structure that looks something like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;└── my_project
+    │
+    ├── Code
+    │   ├── process_raw_data.f77  &amp;lt;--- Heart of the project, written in 90&amp;#39;s by, uh, someone...
+    │   └── calculate_result.mat  &amp;lt;--- The postdoc who wrote this already left to work for a bank...
+    │
+    ├── Data
+    │   ├── raw_experiment1.txt  &amp;lt;--- This is the raw data from my instrument
+    │   ├── raw_experiment2.txt
+    │   ├── raw_experiment3.txt
+    │   └── processed_data.dat  &amp;lt;--- Postdoc&amp;#39;s code makes this, which I can put into Excel!
+    │
+    ├── output1.txt             &amp;lt;--- The postdocs code made this, which I can put into excel to examine...
+    ├── experiment1.xlsx        &amp;lt;--- Finally, I can do something useful with this $*#@!
+    ├── experiment2.xlsx
+    ├── my_report_v3.docx       &amp;lt;--- The start of my thesis, or new paper
+    └── summary_results.xlsx    &amp;lt;--- Summary excel sheet, so I can clean up my final results
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;In this folder, there is an old FORTRAN program (&lt;code&gt;Code/process_raw_data.f77&lt;/code&gt;) that you got from your supervisor, it was written several decades ago and there is no one around who you can ask about this code. (Maybe there is no one even left alive who worked on it...) To get results you start by editing that file: maybe all you really need to do is change one line to point the code at some raw data you got from an instrument (e.g. &lt;code&gt;Data/raw_experiment1.txt&lt;/code&gt;) and compile/run the program. On your first day your supervisor told you the exact commands to type to do this.&lt;/p&gt;
+&lt;p&gt;The old program might create an intermediate file, something like &lt;code&gt;Data/processed_data.dat&lt;/code&gt;. That file is a mess, way to complicated to deal with (Big Endian? Binary what? carriage control characters?). Luckily a postdoc who used to be in your group left behind a Matlab script to process that data into something you can read into Excel. So you run &lt;code&gt;Code/calculate_result.mat&lt;/code&gt;, and get &lt;code&gt;output.txt&lt;/code&gt;, after some cut-and-paste skills you then have your comprehensible data in a spreadsheet and can begin the real task of analysing it, which was the reason you are doing your work in the first place!&lt;/p&gt;
+&lt;p&gt;You make some analysis, spread across multiple pages of your Excel workbook, and end up producing some figures and tables which you put into your word document, write your text, send to your supervisor, await comments and pray they don't ask for any changes that would send you back to square 1!&lt;/p&gt;
+&lt;p&gt;This is probably the most common workflow you will find at Universities and companies the world over. Working in this way is really labour intensive, and also incredibly irreproducible, &lt;a href="http://www.popularmechanics.com/science/a22577/genetics-papers-excel-errors/"&gt;error-prone&lt;/a&gt;! (The &lt;a href="http://modeling-languages.com/whats-bus-factor-software-project/"&gt;bus-factor&lt;/a&gt; of projects like these are usually very low.) It would be almost impossible for you to ensure someone could recreate the results presented in your final document without you sat beside them.&lt;/p&gt;
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;You can download our code from the URL supplied. Good luck downloading the only postdoc who can get it to run, though &lt;a href="https://twitter.com/hashtag/overlyhonestmethods?src=hash"&gt;#overlyhonestmethods&lt;/a&gt;&lt;/p&gt;&amp;mdash; Ian Holmes (@ianholmes) &lt;a href="https://twitter.com/ianholmes/status/288689712636493824"&gt;January 8, 2013&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;The good news is there is no where to go but up, and any change to this workflow would be a positive one! If you need to produce results quickly, then it likely isn't feasible to just learn some new tools, snap-your fingers, and immediately change this workflow. Instead, you will have to gradually migrate towards a fully Open Science approach, perhaps over the course of several projects (like I did).&lt;/p&gt;
+&lt;h3&gt;Starting the journey&lt;/h3&gt;
+&lt;p&gt;The best place to start is to download &lt;a href="https://www.continuum.io/downloads"&gt;Anaconda Python&lt;/a&gt; from Continuum Analytics, you don't need administrator privileges, and it works on Windows, Mac, and Nix* systems. Get one with Python version 3, not 2. (If you need to switch later on that will be easy, but by default you should try to work in Python 3.) Also download &lt;a href="https://git-scm.com"&gt;Git&lt;/a&gt; (and &lt;a href="https://git-for-windows.github.io"&gt;Git-Bash&lt;/a&gt; if you are on windows).&lt;/p&gt;
+&lt;p&gt;With that trifecta of the shell, a high-level programming language and a version control system you are ready to begin! The next step is to run through a couple of tutorials. If you cant get yourself to a &lt;a href="http://software-carpentry.org"&gt;Software Carpentry course&lt;/a&gt;, you can run through their materials on their website. Also have a look at &lt;a href="https://www.codecademy.com/learn/all"&gt;CodeAcademy&lt;/a&gt; (particularly their &lt;em&gt;'Command Line'&lt;/em&gt;, &lt;em&gt;'Learn Git'&lt;/em&gt;, and &lt;em&gt;'Learn Python'&lt;/em&gt; lessons). You will probably pick up the basics of Python and Bash in just a few days sufficiently to begin using these tools for your own work.&lt;/p&gt;
+&lt;h3&gt;Project triage&lt;/h3&gt;
+&lt;h4&gt;Step 1: Moving from Excel to a few bad bits of code&lt;/h4&gt;
+&lt;p&gt;The easiest place to start improving your workflow is on the part that is most labour-intensive and least reproducible: usually this means the Excel workbooks. Instead of reading the data into Excel, read it with Python, and try to create some scripts that can do your analysis tasks. I realise this sounds like me explaining how to play the piano by saying &lt;em&gt;"Step 1: sit in front of a piano. Step 2: play the piano"&lt;/em&gt;, and perhaps at first you will struggle a little to do tasks which you know you could do in a couple of clicks in Excel. However, after following a few online tutorials you will see that you can copy and paste large portions of code from tutorials with small changes that will let you read data from a file, do many cool operations (using tools like &lt;a href="http://pandas.pydata.org"&gt;Pandas&lt;/a&gt; for example), and then plot (e.g. using &lt;a href="http://matplotlib.org"&gt;Matplotlib&lt;/a&gt;). Even if your code is awful at least it is automated, and can be tracked with version control tools and improved later. Maybe you will even keep a few Excel files while you are still going through a transition, and that is totally fine.&lt;/p&gt;
+&lt;h4&gt;Step 2: Minor improvements = big time-saving&lt;/h4&gt;
+&lt;p&gt;Let's assume you've started adding a few simple Python scripts to your project that just look like a long list of &lt;em&gt;"Read this data, do X and Y then make a plot"&lt;/em&gt;. And maybe you're starting to see a few small benefits, like saving time when you have to re-run your workflow to add more data or tweak something small. But on the whole, you might feel like this hasn't really saved you much time yet. You may even feel like you've lost time learning Python, and have gotten quite frustrated a few times along the way wrapping your mind around new ways of thinking about your data.&lt;/p&gt;
+&lt;p&gt;Don't despair! Imagine you are going to start a new project, and you start to notice that there are a few similarities with your old one. You get the feeling you can start to re-use bits of your old python code again, maybe even improve them a little. Now you will start to see one of the powerful benefits of working like this: &lt;strong&gt;abstraction&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;For the sake of explanation, imagine your task is multiplying two numbers together thousands of times. The first time you solved this problem, you only knew enough Python to write it out like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;result_1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;value_1&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;value_2&lt;/span&gt;
+&lt;span class="n"&gt;result_2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;value_3&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;value_4&lt;/span&gt;
+&lt;span class="n"&gt;result_3&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;value_5&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;value_6&lt;/span&gt;
+&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="n"&gt;etc&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now you have been working with Python for a little while, you realise you can make an abstract solution, that will solve this problem once-and-for-all, a solution you can re-use. It might look like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;my_tool&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;input_1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;input_2&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;input_1&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;input_2&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Much simpler! and when you call your inputs in a loop and feed them into this function it seems to works brilliantly! But actually, it is a little fragile like this. As you learn more, you will find that if you add a few more pieces to the code, you can get really important benefits:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pytest&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;my_tool&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;input_1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;input_2&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;input_1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;input_2&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;input_1&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;input_2&lt;/span&gt;
+    &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;raise&lt;/span&gt; &lt;span class="ne"&gt;ValueError&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Error: inputs are not numbers&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;test_my_tool&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="k"&gt;assert&lt;/span&gt; &lt;span class="n"&gt;my_tool&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt;
+    &lt;span class="k"&gt;assert&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;my_tool&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;3.5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;5.5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mf"&gt;19.25&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;with&lt;/span&gt; &lt;span class="n"&gt;pytest&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;raises&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ne"&gt;ValueError&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="n"&gt;my_tool&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;NA&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;It is really remarkable what's going on in these few lines of code: Your tool starts by checking that it has been given the right type of data (numerical data), by seeing if it can convert it to an integer.  If the inputs are good, it will do your task. If it can't, the program will stop, giving an Error: so you wont accidentally process bad values and wind up with junk values in your results that you have to hunt down later!&lt;/p&gt;
+&lt;p&gt;Things get more interesting when we see what comes next - a test! This is a reality check, to make sure that no matter how you extend or change your tool in the future, it will always produce results that make sense. It even checks that the tool fails when it should, so you know that despite changes you may make tomorrow, it wont start giving back unexpected results, adding errors into your results. This is really important, as projects change over time, and it is guaranteed you won't write a perfect program first time. So when you go back in the future and change your functions, you can be relatively confident you wont inadvertently introduce errors into your work. You can run this test with &lt;a href="http://docs.pytest.org/en/latest/"&gt;pytest&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It is difficult to over-state the time-saving and productivity boosting potential of making small, easy-to-understand solutions, that are re-useable, and include tests: your final workflow should be a daisy-chain of tools like this. If you can get this far into updating your working approach, you will be making great progress, and will be poised to take advantage of some really amazing tools in the future, and share with &lt;a href="https://www.software.ac.uk"&gt;communities of people&lt;/a&gt; already using them!&lt;/p&gt;
+&lt;p&gt;This post was part 2 in a series.&lt;/p&gt;
+&lt;p&gt;Banner image by &lt;a href="https://www.flickr.com/photos/hanorlin/"&gt;Hanna Norlin&lt;/a&gt;.&lt;/p&gt;</summary><category term="Reproducibility"></category><category term="Open Science"></category><category term="Software"></category></entry><entry><title>Trust me, I'm a doctor</title><link href="https://benlaken.com/Trust_me.html" rel="alternate"></link><published>2016-09-30T14:23:00+02:00</published><updated>2016-09-30T14:23:00+02:00</updated><author><name>Benjamin Laken</name></author><id>tag:benlaken.com,2016-09-30:Trust_me.html</id><summary type="html">&lt;p&gt;&lt;img src="./images/lego_banner.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;It may surprise a few people to learn that this cliché is more-or-less accurate when it comes to most modern research. More-often-than-not researchers expect us to take their results on faith.&lt;/p&gt;
+&lt;p&gt;The workflows that researchers use to produce results are now, almost without exception, based on extremely complex software -- more complex than even than the researchers themselves usually appreciate! They typically involve multiple stages of data processing, perhaps spread across several people and several computer systems, with analysis scripts written in various languages, intermediate stages of manual file manipulations, maybe even the odd spreadsheet program. The core of an analysis may often be written in a rush to meet one deadline or another. And this is usually done without documentation, tests, or version control, to ultimately produce a figure or value that makes up 'a result'. The net effect of this creates a situation ominously named the &lt;a href="https://en.wikipedia.org/wiki/Replication_crisis"&gt;replication crisis&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;An experienced software developer friend-of-mine once remarked, when looking at a typical example of a modern research pipeline&lt;sup id=sf-Trust_me-1-back&gt;&lt;a href=#sf-Trust_me-1 class=simple-footnote title=" A pipeline is a colloquial way of referring to all parts of the process of turning raw data into a final analysis"&gt;1&lt;/a&gt;&lt;/sup&gt;, that 'it was no better than a random number generator'. The pipeline was undoubtedly of significant importance to the group that made it. But he knew that no matter if you are an unpaid PhD student, or a highly-paid developer working for Google, code has bugs. Many bugs. They are hard enough to find when you use good software development practices, but an opaque research pipeline makes debugging virtually impossible. It is pure arrogance to think that as a researcher you have perfectly functional software on what is essentially a first release, and people should just be satisfied to accept your results at face value!&lt;/p&gt;
+&lt;p&gt;Most mainstream, respectable journals now support Open Access and also highlight a commitment to reproducibility to some degree, usually by advising the authors to place their data or code in accessible databases or supplying them as supplementary materials.&lt;/p&gt;
+&lt;p&gt;In my experience, reviewers almost never attempt to verify that they can reproduce an authors result, or examine whether the steps they have taken in their analysis pipeline are flawed in some way that might compromise the papers conclusions. In fact, as a reviewer, requesting data or code in order to check the work you have been given to check is usually met with quizzical and uncertain replies -- as if neither the editors or authors know what to do next!&lt;/p&gt;
+&lt;p&gt;Typically, authors want to avoid giving code out at all costs: they tend to view such requests as an unreasonable level of scrutiny, or even a loss of intellectual property. They are also well-aware that if people care to look in detail they are likely to find the metaphorical duct-tape holding their research together. (Duct-tape, which they rationalise, they will address in the next iteration of their work.) If a reviewer does ask to see code, usually what happens next is that they are treated like a biased or unreasonable reviewer, and the authors may try to encourage the editors to favour the opinions of the other reviewers who didn't rock the boat. Even if journals state in their publication policies sentiments that 'data and code used to produce results must be made available with publication of the manuscripts', this is rarely enforced.&lt;/p&gt;
+&lt;p&gt;Consequently, readers are usually left to fend for themselves when it comes to piecing together what authors have actually done (which may be all-but un-intuitable based on the text of a paper). The only ways skeptical readers can decide whether or not to put stock in what they are reading is usually by a mix of a papers logical consistency (&lt;a href="https://blogs.scientificamerican.com/doing-good-science/evaluating-scientific-claims-or-do-we-have-to-take-the-scientists-word-for-it/"&gt;see here&lt;/a&gt;), agreement to meta-studies, or the reputation of the authors or institutes to which they are associated.&lt;/p&gt;
+&lt;p&gt;As &lt;a href="https://twitter.com/raymondh"&gt;Raymond Hettinger&lt;/a&gt; says:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"There has to be a better way!"&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;As analysis pipelines have become increasingly complex, simply saying X result was produced with Y is not useful. It is well understood that more information is needed, such as metadata about the researchers systems, library versions, automated workflows or makefiles. Many professions, including software developers, have reached the understanding that reproducing peoples results is a difficult problem. (Hence the enormous popularity of systems such as Docker and Vagrant.)&lt;/p&gt;
+&lt;p&gt;A difficult reality is that while most researchers are able to cobble together steps to go from raw data to a result, they are not able to do so in anything close to a reproducible manner -- this is important if they want to use their analysis as evidence to affect society! There are two options to address this:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;1. Improve the training and awareness of researchers, and enforce practices that allow for reproducibility.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;There are now many resources encouraging researchers to &lt;a href="http://www.nature.com/news/2010/101013/full/467753a.html"&gt;publish their code&lt;/a&gt; or showing them how to adopt &lt;a href="http://www.nature.com/news/interactive-notebooks-sharing-the-code-1.16261"&gt;better tools for reproducibility&lt;/a&gt;. Training is being encouraged by non-profit groups such as &lt;a href="http://software-carpentry.org"&gt;Software Carpentry&lt;/a&gt; and &lt;a href="http://www.datacarpentry.org"&gt;Data Carpentry&lt;/a&gt;, driving increased awareness is spreading across disciplines. However, it is not spreading evenly, leading almost to a two-tier system of 1) researchers who are updating their methods and attempting to work with best practices, vs. 2) old-school researchers, who stalwartly stick to old methods, and in turn pass those practices to their students (see my last blog post for more on this). Hopefully at some point a critical mass will be achieved, and the minority of hold-outs who refuse to support the reproducibility of their work will be ostracised. (Happy thoughts.)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;2. Create a specialist position, such as &lt;a href="http://www.rse.ac.uk/who.html"&gt;Research Software Engineers&lt;/a&gt;, and organisations such as the &lt;a href="https://www.software.ac.uk"&gt;Software Sustainability Institute&lt;/a&gt;,  whose purpose  &lt;br&gt;
+is to work with researchers, bringing their expertise in creating research software to domain specific problems as needed.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;For this, universities must essentially create a new class of position; one enticing enough to attract and retain talented people that understand both how research works, and also have a good grasp of software development.&lt;/p&gt;
+&lt;p&gt;In the meantime, we are in a state where you have no good option to determine the reliability of published results, short of spending an inordinate amount of time as a scientific Sherlock Holmes; painstakingly piecing together an analysis from a few public datasets and some lonely clues.&lt;/p&gt;
+&lt;p&gt;Banner image credit &lt;a href="https://www.flickr.com/photos/spacebarpark/"&gt;Kevin spacebarpark&lt;/a&gt;&lt;/p&gt;&lt;ol class=simple-footnotes&gt;&lt;li id=sf-Trust_me-1&gt; A pipeline is a colloquial way of referring to all parts of the process of
+turning raw data into a final analysis &lt;a href=#sf-Trust_me-1-back class=simple-footnote-back&gt;↩&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;</summary><category term="Reproducibility"></category><category term="Journals"></category><category term="Research"></category><category term="Software"></category></entry><entry><title>Academic archetypes: an anti-pattern for reproducibility</title><link href="https://benlaken.com/academic_archetypes.html" rel="alternate"></link><published>2016-09-06T10:00:00+02:00</published><updated>2016-09-06T10:00:00+02:00</updated><author><name>Benjamin Laken</name></author><id>tag:benlaken.com,2016-09-06:academic_archetypes.html</id><summary type="html">&lt;p&gt;&lt;img alt="alt text" src="./images/tale_of_three.png" title="Original image by Jorge Chan" /&gt;&lt;/p&gt;
+&lt;h3&gt;Meet the academics&lt;/h3&gt;
+&lt;p&gt;Raoul is a diligent and hard working PhD student: He immerses himself in his subject, and feels like there is so much to learn with so little time. He may often feel on the outside looking in, racked with doubt, wondering whether he could ever contribute something meaningful to their field. His supervisor has given him some old code, allegedly related to an unrecognisably early version of their PhD project, maybe in something like FORTRAN or Matlab. Peter doesn't have time to stop and smell the roses, he has to get cracking to produce results, write papers, defend, and get on the fast-track to academic success! For him, his main priority is learning his subject, and generating a new contribution to his field.&lt;/p&gt;
+&lt;p&gt;Tasha has put in the endless hours grinding, made it through the trauma of her PhD with only minor mental scarring, and found that she now has more work and responsibilities than ever, but with even less time! She needs to get uber serious, as she tries to publish papers from her thesis, go to conferences, and produce 'trend-setting' new research to become known in her field and make it out of 'permadoc hell'. She might have a steadily growing collection of hacky scripts to process their data, or maybe even some monolithic Excel spreadsheets with VBA macros. She couldn't possibly change the way she works now: it would be a huge set-back not only to loose all that past work, but also to invest all the time learning new tools. And hey, what she has been doing has worked up till now---no journal has ever even asked about her code---so it would be foolish to waste the time changing now.&lt;/p&gt;
+&lt;p&gt;Assistant Professor Smith has worked hard and made many sacrifices to get where she is, yet she is going to have to push even harder to reach tenure. Time for her to rise to prominence in her field and earn international renown. She will likely travel several times each month, and compete in an ever more cut-throat environment for funding, whilst simultaneously building a dynamic research group populated with people like Postdoc Tasha and PhD Student Raoul. All to prove to her university that she has what it takes to be a permanent staff member! Not only would Assistant Professor Smith never dream of going back to square 1 and learning basic working methods again, but in reality she probably rarely does any research herself any more. Instead, she directs her underlings when she has time, and encourages them to re-use and build on whatever pipelines and scripts she built-up on her climb to her current post, as that has the least mental overhead for her to lend a hand when her minions get into trouble.&lt;/p&gt;
+&lt;h3&gt;What's the problem?&lt;/h3&gt;
+&lt;p&gt;If successful, Assistant Professor Smith will join the ranks of tenured professors in her University and take on more teaching and administration responsibilities. Over time, her practices may be enshrined in courseware and become part of the institutional practices at their University.&lt;/p&gt;
+&lt;p&gt;In terms of enabling best research practices to spread, these profiles have an anti-pattern built into them. Bad practices are left uncorrected as there is no incentive to improve and refine old work, optimise working methods for reproducibility. In fact, stopping to improve existing research could be a serious competitive disadvantage: You have to remember that at each stage up this career pyramid there are far-fewer positions, and the competition and stakes becomes far greater. By the time Assistant Professor Smith goes after their tenure, they have almost certainly invested 100% of their adult life into getting their position, professionally and personally. To let up for even a moment could be the difference between being the best, and being the second best candidate --- a disaster, as their peers are all seeking the same goal.&lt;/p&gt;
+&lt;p&gt;So academics become trapped in an endless race against the clock and their peers to produce new results and gain all the kudos possible. As a result, many research pipe-lines simply remain black-boxes, perhaps no better than random-number generators. Many researchers have no immediate way to reliably check their various scripts and disjointed tools are not producing incorrect results, and are not aware of how to go about doing so even if they wanted to.&lt;/p&gt;
+&lt;p&gt;Moreover, the lifetime of academic software, the key component driving modern science, is usually strongly correlated to the length of the authors contracts. Usually a researchers main concern revolves around getting code working on their local machine, and producing results one time, often with multiple (undocumented) intermediate processing steps. Thus, there is a strong tendency for projects to generate abandonware: unmaintained software which rapidly degrades into obsolescence.&lt;/p&gt;
+&lt;p&gt;How can Student Raoul, in the course of their arduous career journey to the level of Professor Smith, hope to break this anti-pattern? When should they start? And what might the impacts of doing so be to their career? Should they even bother? Over the course of the next few blog-posts I hope to address this question and more!&lt;/p&gt;
+&lt;p&gt;Original banner image by &lt;a href="http://www.phdcomics.com/comics/archive.php?comicid=1537"&gt;Jorge Chan&lt;/a&gt;.&lt;/p&gt;</summary><category term="Reproducibility"></category><category term="Software"></category><category term="Science"></category></entry><entry><title>Testing, testing</title><link href="https://benlaken.com/testing_code.html" rel="alternate"></link><published>2016-06-17T09:27:00+02:00</published><updated>2016-06-17T09:27:00+02:00</updated><author><name>Benjamin Laken</name></author><id>tag:benlaken.com,2016-06-17:testing_code.html</id><summary type="html">&lt;p&gt;&lt;img alt="alt text" src="./images/code_banner.jpg" title="Original image by James Clarke" /&gt;&lt;/p&gt;
+&lt;p&gt;Regression testing, unit tests, Test driven development, automated
+testing, defensive programming. Despite years in research, these were
+not terms I had heard, not from my supervisors or peers, nor at
+conferences, and certainly not in journals or other scientific forums.
+Yet after working for a few months in &lt;a href="http://www.ucl.ac.uk/research-it-services"&gt;UCL's
+RITS&lt;/a&gt; &lt;a href="http://www.ucl.ac.uk/research-it-services/about/research-software-development"&gt;Research Software
+Development
+team&lt;/a&gt;,
+a group that emphasises software development to improve Science, I have
+woken up to the reality that software developers have known for a long
+time:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;"Code without tests is broken by design"&lt;/em&gt; - &lt;a href="https://jacobian.org"&gt;Jacob
+Kaplan-Moss&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Does this mean that all the scientific code written by myself and the
+hundreds of thousands of other researchers globally that more-or-less
+ignores testing is useless? Not at all. It does means that the code
+might not be robust, may be unable to deal with edge cases, and may
+(probably) hide bugs.&lt;/p&gt;
+&lt;p&gt;If you have ever tried to re-use a script written to produce data for a
+specific publication, you will already know that it can take some work
+to get it to run in a different environment or on different data. But
+without tests there is know way to even know if the code works the way
+in which the original authors intended it to.&lt;/p&gt;
+&lt;p&gt;For anyone interested in getting started with testing (it's never too
+late), check out the course material from UCL's &lt;a href="http://development.rc.ucl.ac.uk/training/engineering/"&gt;MPHYG001: Research
+software Engineering with
+Python&lt;/a&gt;, by the
+RSD team leader &lt;a href="https://iris.ucl.ac.uk/iris/browse/profile?upi=JHETH53"&gt;Dr. James
+Heatherington&lt;/a&gt;.
+There is also nice material from the &lt;a href="http://pythontesting.net/test-podcast/"&gt;Test and Code
+podcast&lt;/a&gt; by &lt;a href="https://twitter.com/brianokken"&gt;Brian
+Okken&lt;/a&gt;, including a useful ebook. He can
+also be heard discussing testing on the excellent &lt;a href="https://twitter.com/talkpython"&gt;Talk Python to
+Me&lt;/a&gt; podcast &lt;a href="https://talkpython.fm/episodes/show/45/the-python-testing-column-now-a-thing"&gt;Episode
+#45&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;After my quick education in testing I would say that intentionally
+writing code without tests is equivalent actively trying to ignore
+problems. In a purely software development context this would simply be
+passing on a &lt;a href="https://en.wikipedia.org/wiki/Technical_debt"&gt;technical
+debt&lt;/a&gt;. In the context of
+Science however, the negative impacts will land on you much more
+directly. As it's your personal reputation that rests on the credibility
+of your work. So start testing!&lt;/p&gt;
+&lt;p&gt;Banner photo credit &lt;a href="https://www.flickr.com/photos/jc/2824253273/in/photolist-4FGR4v-5iz36X-8G1uXV-7w2Qiv-o5zxto-9AwFd3-3cpzbd-9AtL4n-48zoQq-9AwFjj-D3Ggt-DmzuR-pSfzW-xwTA7-7vnuo-pScys-zPTaq-7qd5hz-r7MxJ-qMjh4-a4wyn-r7MxK-zPRkT-pScyx-pScyw-unfhM-pScyu-pScyv-pScyt"&gt;James
+Clarke&lt;/a&gt;.&lt;/p&gt;</summary><category term="Testing"></category><category term="Python"></category><category term="Software"></category></entry><entry><title>A Research Software Developer in London</title><link href="https://benlaken.com/RDS_london.html" rel="alternate"></link><published>2016-06-10T09:04:00+02:00</published><updated>2016-06-10T09:04:00+02:00</updated><author><name>Benjamin Laken</name></author><id>tag:benlaken.com,2016-06-10:RDS_london.html</id><summary type="html">&lt;p&gt;It has been a while since my last post, and a lot has changed. My time at the Department of Geosciences in the University of Oslo as a postdoc research fellow sadly came to a close; it was hard to move on and leave behind my friends and Norwegian life. I have many great memories of Norway, and hope it won't be too long before I return. Perhaps that will even be my last postdoc and the end of my professionally active research career. After 3 postdoc contracts I would say that is a bitter-sweet thought, as there are many pros and many cons of being a postdoc-probably a mix which you won't find in any other job-but 6 years of that lifestyle may be my limit.&lt;/p&gt;
+&lt;p&gt;Last February I moved to a new type of job, a Research Software Developer. I am now part of a small team at the University College of London, which itself is part of the &lt;a href="http://www.ucl.ac.uk/research-it-services"&gt;Research IT services department&lt;/a&gt;. There are around eight of us working together supporting various projects from departments across the university, and we are linked to the UK's &lt;a href="http://www.software.ac.uk"&gt;Software Sustainability Institute&lt;/a&gt;. The team are the smiling people pictured! The goal of the team is essentially to use modern software development practices to improve research and researchers, making projects more reliable, usable, correct, and functional beyond the funding period of specific projects, and training researchers in tools and practices that support productivity and reproducibility. We are fostering Open Science practices: something that I find very motivating!&lt;/p&gt;
+&lt;p&gt;&lt;img alt="alt text" src="./images/ucl_team.jpg" title="UCL RSD team summer 2016" /&gt;&lt;/p&gt;
+&lt;p&gt;We also run Software Carpentry workshops: the next one is &lt;a href="http://ucl-rits.github.io/2016-06-22-UCL_software_carpentry/"&gt;coming up soon&lt;/a&gt;. It will be my first since I officially became an instructor, and the first which I will co-lead, so I am very excited about that.&lt;/p&gt;
+&lt;p&gt;The new job is a big change of pace for me, each day is invariably a significant learning experience. So far I have gotten-to-grips with lots of new tools and computer science methods. I have learnt a lot about programming practices, code testing and various packages, version control, and lately I have been familiarising myself with virtual machines using &lt;a href="https://www.docker.com"&gt;Docker&lt;/a&gt; and &lt;a href="https://www.vagrantup.com"&gt;Vagrant&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The fun never stops: over the next few months there are lots more big changes to come, including another move - this time to Madrid, my wife's home city. One of the big benefits of moving away from active research is that it has freed me up to focus on other (albeit closely related) interests. My main one being improving science in general through spreading Open Science practices. I hope to have some news about an exciting new project I am starting relating to this soon. I also hope to find the time to improve my website soon, and perhaps post some more blogs and code examples from my three 2016 publications. I am also hoping to indirectly continue my past research by supporting my old collaborators-particularly with the new development methods I am learning-so hopefully there will be more updates on that too in the future.&lt;/p&gt;</summary><category term="Software"></category><category term="Research"></category><category term="UCL"></category></entry><entry><title>Old Science invigorated with Open Science</title><link href="https://benlaken.com/paper_update.html" rel="alternate"></link><published>2016-03-24T13:55:00+01:00</published><updated>2016-03-24T13:55:00+01:00</updated><author><name>Benjamin Laken</name></author><id>tag:benlaken.com,2016-03-24:paper_update.html</id><summary type="html">&lt;p&gt;&lt;img alt="alt text" src="./images/banner_old_sci.png" title="Original image by James Clarke" /&gt;&lt;/p&gt;
+&lt;p&gt;Last November someone e-mailed me a strange request, they wanted to use
+a method from &lt;a href="http://www.swsc-journal.org/articles/swsc/full_html/2013/01/swsc130020/swsc130020.html"&gt;a paper I wrote in
+2013&lt;/a&gt;.
+Shocking I know. I had included in the paper a link to some IDL code
+meant to reproduce the figures, of course, it was already broken. It had
+aged badly, inaccessible a full 2 years ahead of &lt;a href="http://www.clir.org/pubs/archives/ensuring.pdf"&gt;Jeff Rotheberg's
+prediction&lt;/a&gt; (&lt;em&gt;"digital
+information lasts forever — or five years, whichever comes first"&lt;/em&gt;).
+After digging through my file system and recovering the old script I had
+the feeling that if the link not been broken it would probably not have
+been of much help. Needless to say, at the time I wrote the paper I
+thought the approach I took was great. I didn't know much about coding
+then, and I hadn't heard of version control either. Although, to be
+fair, no one in the field I was working in talked about these issues or
+showed much interest in code. In fact, asking to see peoples code was a
+good way to loose friends (&lt;em&gt;"You don't trust me?"&lt;/em&gt; or &lt;em&gt;"You want to
+steal my work?"&lt;/em&gt;). A few years on, and I now know enough to see that
+approach I took was not terribly helpful if the aim was to create
+reproducible science.&lt;/p&gt;
+&lt;p&gt;Driven by examples from a new generation of researchers who break from
+the &lt;em&gt;"publish or perish"&lt;/em&gt; model and instead operate under the &lt;em&gt;"share
+and thrive"&lt;/em&gt; philosophy (people like &lt;a href="http://ivory.idyll.org/blog/"&gt;Titus
+Brown&lt;/a&gt;, &lt;a href="http://www.jesshamrick.com/blog/"&gt;Jessica
+Hamrick&lt;/a&gt;, &lt;a href="http://wesmckinney.com"&gt;Wes
+Mckninney&lt;/a&gt;, and &lt;a href="http://pyaos.johnny-lin.com"&gt;Johnny Wei-Bing
+Lin&lt;/a&gt;), I have invested time into learning
+the tools and practices of the Open Science community. Since a lot of
+effort went into writing my 2013 paper, and I sincerely wanted people in
+my field to adopt the methods it discusses, I committed to the challenge
+of re-writing the code, and thinking how to communicate the ideas more
+effectively. I decided to mix the (peer-reviewed) original article text,
+with re-written Python code and new figures (I had seen such an approach
+used before, in a &lt;a href="http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/"&gt;Bayesian text book written in the
+Notebook&lt;/a&gt;,
+which I recommend you have a look at), so I diligently set about trying
+to recreate my own work from days past.&lt;/p&gt;
+&lt;p&gt;As any researcher will tell you, this is a dangerous game, analogous to
+the moment just before someone accidentally shoots themselves whilst
+cleaning their own gun. This is because scientists are now essentially
+programmers, programmers without a background in computer science,
+usually without training or assistance of any kind in fact, who
+generally don't have code-reviews, write tests, share their code, or
+sometimes even understand the nuances of the language they are working
+in. (For some discussion on this see the PLOS article &lt;a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745"&gt;Best practices in
+Scientific
+Computing&lt;/a&gt;.)
+What's more, when they submit papers for review, only the polished
+output of these programs is considered, a nice shiny figure with some
+significance levels, usually from a black-box statistical routine.
+Needless to say there are a great many things that can go awry between
+raw data and the shiny figure, and it is a safe bet that many, many bugs
+are hiding in the analyses of many, many, papers.&lt;/p&gt;
+&lt;p&gt;After a few months of working on this project on and off---and
+thankfully only finding one minor error in the original code, that
+probably doesn't require a retraction---it is ready: A &lt;a href="http://jupyter.org"&gt;Jupyter
+Notebook&lt;/a&gt;, written in Python 3, with interactive
+web-based plots (in &lt;a href="http://bokeh.pydata.org/en/latest/"&gt;Bokeh&lt;/a&gt; and
+&lt;a href="https://plot.ly"&gt;Plotly&lt;/a&gt;), version controlled, and available in a
+&lt;a href="https://github.com/benlaken/Composite_methods_LC13"&gt;Github repo&lt;/a&gt; (with
+all the dependent data). I also included my
+&lt;a href="https://www.continuum.io/downloads"&gt;Anaconda&lt;/a&gt; environment information,
+detailing the required dependencies (and versions) to run the code as it
+was intended. And, as a final touch of black-magic, the whole repo can
+be run in the cloud via the excellent &lt;a href="http://mybinder.org"&gt;Binder
+project&lt;/a&gt;! Put another way, anyone can either
+&lt;a href="https://git-scm.com/docs/git-clone"&gt;clone&lt;/a&gt; the repo and run the code
+locally, or they can simply visit the repo and launch a Jupyter session
+from Binder's cloud service and explore the code without even having
+Python installed on their machines. Fantastic!&lt;/p&gt;
+&lt;p&gt;Of course, the reason I went to the trouble of investing time in an old
+paper is because I think the value of the type of science I am doing
+lies in its communication. The easier it is for people to get into the
+nuts-and-bolts of what I have done, to play and experiment with these
+ideas, the easier it is for them to adapt it to their own work and build
+upon it. I feel that I would much rather spend time making sure my old
+work does not become useless to the community, rather than simply
+steam-roll on towards new research, trying to notch up as many
+publications as possible.&lt;/p&gt;
+&lt;p&gt;As a PhD student only \~6 years ago, no one ever spoke to me about Open
+Science, or any of the technologies that make so feasible now. I was
+aware of people starting to use R from on-line message boards, although
+I was encouraged to work in IDL. I was essentially given a print-out of
+basic commands, access to a shared floating licence (one shared by the
+whole department), and sent on my way. I had virtually no awareness
+about scientific computing tools or reproducible Science. Hence my road
+towards creating work like this was long, and much effort was certainly
+wasted on ineffective/inefficient practices. Happily now, the landscape
+has changed dramatically in only a short time for young researchers,
+with organisations like &lt;a href="http://software-carpentry.org"&gt;Software
+Carpentry&lt;/a&gt; really making a difference.
+Now, when I talk to new PhD students or older Professors, even if they
+don't use Open Source languages or version control tools, they know they
+exist, and they are seeing how invaluable computer science literacy can
+be for their own research.&lt;/p&gt;
+&lt;p&gt;The link to the repo is
+&lt;a href="https://github.com/benlaken/Composite_methods_LC13"&gt;here&lt;/a&gt;. Note when
+launching the notebook from Binder, it may take around 30 seconds for
+the notebook to load up, as it is fairly large.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</summary><category term="Journals"></category><category term="Open Science"></category></entry><entry><title>Monsoon madness</title><link href="https://benlaken.com/monsoon_mad.html" rel="alternate"></link><published>2016-02-24T13:55:00+01:00</published><updated>2016-02-24T13:55:00+01:00</updated><author><name>Benjamin Laken</name></author><id>tag:benlaken.com,2016-02-24:monsoon_mad.html</id><summary type="html">&lt;p&gt;&lt;img alt="alt text" src="./images/monsoon_india.png" title="Original image by Jorge Chan" /&gt;&lt;/p&gt;
+&lt;p&gt;This story starts around 2012, when I received a request to review a
+paper on solar activity and the Indian Monsoon from the journal
+&lt;a href="https://en.wikipedia.org/wiki/Advances_in_Space_Research"&gt;Advances in Space
+Research&lt;/a&gt;. I
+have reviewed many such papers (perhaps \~20) so this was nothing
+unusual. A quick read revealed some tortured data, abused statistics,
+and nonsense prose. All in all a fairly typical manuscript in its field.
+A version of it can be found at &lt;a href="http://arxiv.org/abs/1412.1041"&gt;ArXiv&lt;/a&gt;.
+(To get some idea of why I say this is a typical paper, have a look at
+Barrie Pittocks 1978 piece &lt;a href="http://link.springer.com/chapter/10.1007/978-94-009-9428-7_18?no-access=true"&gt;"Solar Cycles and the Weather: Successful
+Experiments in
+Autosuggestion?"&lt;/a&gt;,
+although it is, unfortunately, pay-walled.)&lt;/p&gt;
+&lt;p&gt;The authors were claiming that weak and strong Indian monsoons are
+related to changes in &lt;a href="https://en.wikipedia.org/wiki/Cosmic_ray"&gt;cosmic
+rays&lt;/a&gt;: energetic particles
+which ionize the atmosphere. (There is a good review
+&lt;a href="http://onlinelibrary.wiley.com/doi/10.1029/2009RG000282/abstract"&gt;here&lt;/a&gt;
+for those interested in background regarding their possible role in
+climate.) The study took rainfall data from India and split into two
+samples, representing the strongest and weakest monsoons recorded. Using
+composites, they examined the linear change in cosmic rays over a period
+of 5 months during their samples. The linear change in cosmic rays
+during the weak and strong monsoon samples were of different sign. Based
+on their observation that the cosmic ray changes during weak and strong
+monsoons were 1) &lt;em&gt;anti-correlated&lt;/em&gt;, and 2) &lt;em&gt;showing high correlation
+coefficient values&lt;/em&gt;. From this, they argued that cosmic rays affect the
+monsoon via clouds, and also potentially impact global climate.&lt;/p&gt;
+&lt;p&gt;Now, something key for you to know about the cosmic rays: they vary with
+a roughly 11-year period, as they are modulated by the &lt;a href="https://en.wikipedia.org/wiki/Solar_cycle"&gt;Solar
+Cycle&lt;/a&gt;. Unfortunately for the
+authors, this means that if you extract a period of several months of
+cosmic ray data from a time-series, and examine the linear trend, it
+will very likely show either a decreasing or increasing tendency
+depending on the phase of the Solar Cycle. If you were to randomly pick
+a few periods from these data and stack them together (as the authors
+did with a &lt;a href="http://www.swsc-journal.org/articles/swsc/abs/2013/01/swsc130020/swsc130020.html"&gt;composite
+method&lt;/a&gt;),
+you will end up with a trend depending on where the samples were taken
+from in relation to the phase of the Solar Cycle.&lt;/p&gt;
+&lt;p&gt;To simplify things, assume the cosmic rays vary like a sine wave over
+11-years with no long-term trend. By looking at two small random
+composite samples and examining the 5-month linear changes you more or
+less have a 50:50 chance of having either an increasing or decreasing
+trend. If you don't make an &lt;em&gt;a priori&lt;/em&gt; assumption about what direction
+the trends should be assigned to (e.g. that weak monsoons should
+correspond to increasing cosmic rays and strong monsoons should
+correspond to decreasing cosmic rays), and only care that the samples
+are anti-correlated, your chance of getting a positive result is 50%.
+However, if you argue that only one specific configuration of samples
+with changes supports your argument, then the chance of randomly getting
+this drops to 25%. So that more-or-less takes care of the
+anti-correlation, as alone it is clearly not evidence of something
+unusual here.&lt;/p&gt;
+&lt;p&gt;But were high correlation coefficients unusual in this work? Because the
+long term-changes in cosmic rays are determined by the Solar Cycle, the
+correlation coefficient values from samples constructed the way they
+authors made them tend to be high. In fact high-values are &lt;em&gt;the most
+common type of values you can obtain from sampling the data in this
+manner&lt;/em&gt;. (This is the core argument I present in &lt;a href="http://www.swsc-journal.org/articles/swsc/abs/2016/01/swsc150064/swsc150064.html"&gt;my
+paper&lt;/a&gt;).
+The authors made no real effort to test the probability values of these
+data in detail, so they did not realise this. They simply applied an
+out-of-the-box statistical test, and assumed the values were meaningful.&lt;/p&gt;
+&lt;p&gt;So, after pointing out this core problem with the paper in peer review
+the editor for Advances in Space Research promptly rejected the paper
+and thanked me. (I feel like noting that I rarely recommend straight
+rejections in my reviews, I normally go out of my way to try to give
+comments that will help people make a stronger analysis. Although the
+more time goes on, the more empathise with
+&lt;a href="http://www.nyu.edu/classes/keefer/hell/camus.html"&gt;Sisyphus&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;A year or more passed, and I received the same paper again from the
+&lt;a href="https://en.wikipedia.org/wiki/Journal_of_Atmospheric_and_Solar-Terrestrial_Physics"&gt;Journal of Atmospheric and Solar Terrestrial
+Physics&lt;/a&gt;,
+unmodified, typos and all**. This is not so uncommon in small fields,
+and has happened to me several times. So, I submitted my same review and
+moved on thinking all would be well.&lt;/p&gt;
+&lt;p&gt;(** This, and other examples, lead to my feeling that in many
+instances authors are willing to put more effort into pushing articles
+through journal systems than they are into the underlying science.)&lt;/p&gt;
+&lt;p&gt;Alas, despite arguments that the study was total rubbish, the editors
+decided that this paper did indeed prove that the climate system has a
+heart of cosmic rays and published it. (Again, If the claims of this
+paper were true they would totally re-shape climate science. The editors
+were happy to accept this paradigm shattering paper despite a clear
+explanation of why it was total nonsense!) It didn't take too long for
+the story to be repeated, e.g. on &lt;a href="http://hockeyschtick.blogspot.no/2014/12/new-paper-suggests-cosmic-rays-may.html"&gt;The Hockey
+Schtick&lt;/a&gt;.
+Over the course of a year, I protested heavily to the editors, and
+pursued what I thought was a 'proper' recourse, publishing a direct
+reply in the same journal as the original article. After a year with the
+editors however, they were effectively stonewalling my efforts. I don't
+want to go into the often frustrating and ridiculous details of that,
+other than to say the end result was a prompt submission and acceptance
+to the EDP Open Science journal &lt;a href="http://www.swsc-journal.org/articles/swsc/abs/2016/01/swsc150064/swsc150064.html"&gt;Space Weather and Space
+Climate&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This story, which out of kindness I only subjected you to an abridged
+version of, certainly taught me some hard lessons. For one, due to the
+inordinate amount of time-wasted, I mostly only accept reviews from
+editors/authors I personally know, to try to ensure they are genuinely
+motivated and not simply looking to fill quotas, gain rewards, or
+pad-CVs. I am also trying hard not to get sucked into studies that most
+sane researchers could spot as junk and simply ignore. Finally, I think
+more than ever that publishing papers should be seen as the start of a
+process, not the end of one, and adopting reproducible Open Science
+methods should be seen as crucial to research credibility.&lt;/p&gt;</summary><category term="Journals"></category><category term="Open Science"></category><category term="Sun"></category><category term="Climate"></category></entry><entry><title>New book launched: Earth's climate response to a changing Sun</title><link href="https://benlaken.com/TOSCAbook.html" rel="alternate"></link><published>2015-11-10T10:29:00+01:00</published><updated>2015-11-10T10:29:00+01:00</updated><author><name>Benjamin Laken</name></author><id>tag:benlaken.com,2015-11-10:TOSCAbook.html</id><summary type="html">&lt;p&gt;&lt;img alt="" src="./images/TOSCA_group_web.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Over the past 4 years, more than 80 scientists from 20 countries across
+Europe have come together, in an EU-funded COST project, called
+&lt;a href="http://lpc2e.cnrs-orleans.fr/~ddwit/TOSCA/TOSCA/Home.html"&gt;TOSCA&lt;/a&gt;.
+These scientists came from a whole range of different backgrounds,
+including Solar and Space Physicists, Climatologists and Atmospheric
+Scientists, and everyone in-between. Over that time, they produced much
+on the subject of natural climate forcing mechanisms, including many
+meetings, workshops, training schools, short-term research grants,
+original research studies, synthesis reports, special journal editions
+and outreach materials. But the crown jewel of the collaboration is
+their &lt;a href="http://www.files.benlaken.com/documents/flyer_Earth%20climate.pdf"&gt;newly-launched
+book&lt;/a&gt;,
+titled '&lt;em&gt;Earth's climate response to a changing Sun&lt;/em&gt;'.&lt;/p&gt;
+&lt;p&gt;The work, affectionately referred to by the group as a hand-book, is a
+considerable achievement. It is perhaps the first time a group of such
+diverse researchers have poured a titanic effort into discussing at both
+great length and detail, across discipline boundaries, the role of the
+Sun on Earth's climate, considering cutting-edge data and hypotheses.&lt;/p&gt;
+&lt;p&gt;Over the years it has been very gratifying to watch as these researchers
+have come to common ground, evolving their ideas through collaboration,
+exchange and comradery, until they hit intellectual bedrock. That is
+really what the book represents: the hard-boiled core of the subject,
+written to be the most comprehensive and agreed-upon synthesis of this
+overwhelming and exciting field.&lt;/p&gt;
+&lt;p&gt;While I am personally sad that TOSCA has essentially disbanded and the
+project is over, I am ecstatic at the achievements of the group which
+they have distilled and calcified into their book. It was a pleasure to
+be part of their group, which gave me many opportunities for developing
+my research. To see my contribution to the book have a look at Chapter
+4.7, written with &lt;a href="http://oh.geof.unizg.hr/index.php/about-hvar-observatory/staff/jasa"&gt;Dr. Jasa
+Calogovic&lt;/a&gt;,
+and modified with feedback from by Professors &lt;a href="http://www.mn.uio.no/geo/english/people/aca/metos/jegill/"&gt;Jon-Egil
+Kristjansson&lt;/a&gt;,
+&lt;a href=""&gt;Yoav Yair&lt;/a&gt;, &lt;a href="http://pierce.atmos.colostate.edu"&gt;Jeffrey Pierce&lt;/a&gt;, and
+&lt;a href="http://www.utdallas.edu/physics/tinsley-brian/"&gt;Brian Tinsley&lt;/a&gt;. I will
+likely post a synthesis of this material in the future.&lt;/p&gt;
+&lt;p&gt;For more information about the book, or to place and order, check out
+&lt;a href="http://www.files.benlaken.com/documents/flyer_Earth%20climate.pdf"&gt;the
+flyer&lt;/a&gt;.
+Or for more things TOSCA, drop by their &lt;a href="https://www.youtube.com/channel/UCY8dL-P9JtEj6ulpFM0sO2w"&gt;Youtube
+channel&lt;/a&gt; and
+see their videos, or follow them on Twitter
+&lt;a href="https://twitter.com/ghost_tosca"&gt;@ghost_TOSCA&lt;/a&gt;.&lt;/p&gt;</summary><category term="TOSCA"></category><category term="Sun"></category><category term="Climate"></category></entry><entry><title>Can PERICLES stop data fading into the ether?</title><link href="https://benlaken.com/Pericles_update.html" rel="alternate"></link><published>2015-11-06T13:35:00+01:00</published><updated>2015-11-06T13:35:00+01:00</updated><author><name>Benjamin Laken</name></author><id>tag:benlaken.com,2015-11-06:Pericles_update.html</id><summary type="html">&lt;p&gt;&lt;img alt="" src="./images/old_machine.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;I recently attended a one-day evaluation workshop for the &lt;a href="http://pericles-project.eu"&gt;PERCICLES
+Project&lt;/a&gt; as an invited reviewer. PERICLES
+(&lt;a href="https://twitter.com/PericlesFP7"&gt;#periclesfp7&lt;/a&gt;) stands for &lt;em&gt;Promoting and Enhancing Reuse of Information
+throughout the Content Lifecycle taking account of Evolving Semantics&lt;/em&gt;.
+The aim was to give feedback and suggestions on the projects progress
+and how they could meet their goals. The meeting was hosted at the
+Belgium Institute for Space Aeronomy, in Brussels, and it took place on
+29th October, 2015.&lt;/p&gt;
+&lt;p&gt;There were some very interesting/impressive people in attendance, and I
+would say that it was an excellent opportunity for me to consider an
+aspect of Open Science that I think is critical, but perhaps often
+over-looked: While a frequent goal of Open Science is to be reproducible
+and accessible, the need for preservation strategies are not so clearly
+articulated.&lt;/p&gt;
+&lt;p&gt;Perservation Science is certainly a whole scientific field in its own
+right. In researching this subject in preparation for the workshop and
+listening to the presenters, I now think that the Open Science movement
+should explicitly encourage an understanding of long-term data
+preservation as part of its goal of ensuring long-term reproducibility.
+This would including educating researchers and encouraging them as to
+proper data documentation practices, encouraging the use of open
+formats, integrity checks, authors selecting proper rights to the data,
+and being responsible for some type of archival strategy.&lt;/p&gt;
+&lt;p&gt;Speaking after the workshop with the co-investigator of the project &lt;a href="http://www.kcl.ac.uk/artshums/depts/ddh/people/research/waddington/index.aspx"&gt;Dr.
+Simon
+Waddington&lt;/a&gt;
+was particularly illuminating, and I now certainly hope that PERICLES
+can succeed in impacting practices in the Scientific community. When I
+think back over my own experience, it is very true that I have seen
+large amounts of time and energy be wasted, essentially being trapped in
+the past, through format or hardware obsolescence. (Indeed, my PhD
+supervisor once gave me some &lt;a href="https://en.wikipedia.org/wiki/Magnetic_tape_data_storage#/media/File:Largetape.jpg"&gt;reels of magnetic
+tape&lt;/a&gt;,
+relics of research past, effectivley useless now except as
+paperweights.) This is of course compounded by software development
+practices which don't consider portability or even attempt to be
+comprehensible to future users!&lt;/p&gt;
+&lt;p&gt;Hopefully projects like PERICLES can help to break the status-quo that
+"&lt;em&gt;Digital information lasts forever--or five years--whichever comes
+first&lt;/em&gt;" (Jeff Rothenberg, 1999).&lt;/p&gt;</summary><category term="Open Science"></category><category term="Reproducibility"></category></entry><entry><title>Research trip to Croatia, 2015</title><link href="https://benlaken.com/croatia-2015.html" rel="alternate"></link><published>2015-09-22T08:44:00+02:00</published><updated>2015-09-22T08:44:00+02:00</updated><author><name>Benjamin Laken</name></author><id>tag:benlaken.com,2015-09-22:croatia-2015.html</id><summary type="html">&lt;p&gt;&lt;img alt="" src="./images/Ben_Jasa.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;I have just returned from a research trip in Croatia (8--19th
+September), with my friend and long-time collaborator &lt;a href="http://oh.geof.unizg.hr/index.php/about-hvar-observatory/staff/jasa"&gt;Dr. Jasa
+Calogovic&lt;/a&gt;.
+Every now-and-then Jasa and I manage to have some schedule overlap for a
+collaborative trip: This time, he kindly put my wife and I up the
+beautiful &lt;a href="http://oh.geof.unizg.hr"&gt;Hvar Observatory&lt;/a&gt;, which is built
+around (and inside of) a Napoleonic Fortress.&lt;/p&gt;
+&lt;p&gt;The theme of the trip was Sun: from the Sun-kissed Adriatic island,
+Jasa's Solar observatory, to the research itself. Apart from taking some
+time to develop future project strategies we wrote a synthesis paper,
+tentatively titled &lt;em&gt;Reflections on the late Cosmoclimatology&lt;/em&gt;, which we
+hope will appear in the Central European Astrophysical Bulletin. The
+piece briefly outlines the state the field of Sun-Earth links today in
+relation to some of the grander claims over the past (roughly) 20 years,
+and where future research lines are likely to yield interesting
+discoveries.&lt;/p&gt;
+&lt;p&gt;We also made a final check after copy-editing of our contribution to
+&lt;a href="http://lpc2e.cnrs-orleans.fr/~ddwit/TOSCA/TOSCA/Home.html"&gt;TOSCA's&lt;/a&gt;
+forthcoming book, which will be called &lt;em&gt;Earth's climate response to a
+changing Sun&lt;/em&gt;, the book has 61 authors, and was coordinated by
+Professors Jean Lilensten, Thierry Dudock de Wit, and Katja Matthes, to
+be published by EDP sciences. It looks great, and a lot of hard work
+went into it. I will write a more detailed post in the future when it is
+finally available.&lt;/p&gt;</summary><category term="Sun"></category><category term="Climate"></category><category term="TOSCA"></category><category term="Research"></category></entry><entry><title>Scientist, opine thyself</title><link href="https://benlaken.com/Opine-post.html" rel="alternate"></link><published>2015-08-12T08:45:00+02:00</published><updated>2015-08-12T08:45:00+02:00</updated><author><name>Benjamin Laken</name></author><id>tag:benlaken.com,2015-08-12:Opine-post.html</id><summary type="html">&lt;p&gt;&lt;img alt="" src="./images/advc.jpg" /&gt;&lt;/p&gt;
+&lt;h3&gt;The issue&lt;/h3&gt;
+&lt;p&gt;Scientists as advocates. Should Scientists step outside of their
+archetypal roles as dispassionate investigators of the physical world,
+taking time away from asking questions of how things are, and instead
+offer opinions on how they think things should be? Is this a moral
+obligation? Or is it simply dangerous irresponsible territory beyond
+their purview? Should we just be good little investigators and know our
+place? Or in fact, are these the wrong questions to ask, devoid of the
+nuance and perhaps ironically implying that even needing to ask it begs
+only the answer, 'when you grow up'.&lt;/p&gt;
+&lt;p&gt;In Cosmos, Carl Sagan, and later his spiritual successor, &lt;a href="https://twitter.com/neiltyson?lang=en"&gt;Neil deGrasse
+Tyson&lt;/a&gt;, both passionately
+discussed not only scientific facts but also issues of contemporary
+importance. For Carl Sagan, who made the original Cosmos during the Cold
+War, the main issue of the day was nuclear proliferation. While more
+recently, Neil deGrasse Tyson rightly honed in on the dangers of
+environmental damage and Climate Change. This is advocacy, no two ways
+about it, but what does that really entail, and what kind of discussion
+is currently going on in the climate community about advocacy?&lt;/p&gt;
+&lt;h3&gt;What is advocacy?&lt;/h3&gt;
+&lt;p&gt;In a 2013 &lt;a href="http://www.realclimate.org/index.php/archives/2013/12/agu-talk-on-science-and-advocacy/#ITEM-16540-0"&gt;AGU
+talk&lt;/a&gt;
+Professor Gavin Schmidt of NASA states that advocacy is 'the defence of
+your value positions'. The idea is that a scientist has a factual view
+of reality, arrived at through the scientific method and the portion of
+accumulated scientific knowledge of which they are aware. This
+information is mixed with our own personal biases and leads us to arrive
+at a set of values we perceive to be important. Advocacy is then an
+expression of these values.&lt;/p&gt;
+&lt;p&gt;(I note that Gavin's talk mainly revolves around the ideas of the late
+&lt;a href="https://en.wikipedia.org/wiki/Stephen_Schneider"&gt;Professor Stephen
+Schneider&lt;/a&gt;, a profound
+thinker on this subject. For those interested in reading more on this
+topic, his work &lt;a href="http://stephenschneider.stanford.edu/Publications/PDF_Papers/Oxymoron1.pdf"&gt;Science advocate an
+Oxymoron?&lt;/a&gt;
+is a must.)&lt;/p&gt;
+&lt;p&gt;Another definition, following the article of &lt;a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1523-1739.2009.01250.x/abstract"&gt;Nelson and Vucetich
+(2009)&lt;/a&gt;,
+&lt;em&gt;On Advocacy by Environmental Scientists: What, Whether, Why, and How”&lt;/em&gt;,
+argues that we may consider all communication of science not expressly
+for relaying our work to colleagues a form of advocacy. So any
+popularization of science (like &lt;a href="http://www.iflscience.com"&gt;I Fucking Love
+Science&lt;/a&gt;) is advocacy, just in an
+uncontroversial form. The type of advocacy that is controversial, and is
+the kind I wish to discuss, is defined by Nelson and Vucetich as
+'promoting, developing, or assessing policy positions'. Given this, as
+&lt;a href="http://bigthink.com/age-of-engagement/do-scientists-have-a-special-responsibility-to-engage-in-political-advocacy"&gt;Nelson
+explains&lt;/a&gt;,
+the more appropriate question is not, if advocacy is appropriate, but
+&lt;em&gt;"which kinds of advocacy are acceptable and, most importantly, how
+ought we to go about advocacy and how ought we as a scientific community
+react to advocacy"&lt;/em&gt;.&lt;/p&gt;
+&lt;h3&gt;Some recent views&lt;/h3&gt;
+&lt;p&gt;There have been clear voices against advocacy however, particularly in
+relation to the climate community, often centring around arguments of
+bias, impartiality, and ethics that suggest it is problematic for
+scientists to express views beyond communicating their science. Such
+ideas can be found in one form or another in &lt;a href="http://www.theguardian.com/science/political-science/2013/jul/31/climate-scientists-policies"&gt;a Guardian article by
+Tasmin
+Edwards&lt;/a&gt;,
+or many others including &lt;a href="https://dougmcneall.wordpress.com/2014/01/30/why-i-dont-advocate-for-climate-science-policy/"&gt;Doug
+McNeall&lt;/a&gt;,
+&lt;a href="http://www.eenews.net/stories/1059993695"&gt;Virginia Burkett&lt;/a&gt;, and
+&lt;a href="http://judithcurry.com/2013/12/22/rethinking-climate-advocacy/"&gt;Judith
+Curry&lt;/a&gt;.
+Even Brian Cox, someone I much admire as a science communicator, has
+clearly stated that scientists should not advocate (e.g. see 15:46 of
+&lt;a href="https://www.youtube.com/watch?t=952&amp;amp;v=CJC1phPS6IA"&gt;Gavin's video&lt;/a&gt;), and
+has also stated that &lt;em&gt;"Advocacy has damaged trust in the science"&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Even the Royal Society has had issues with the idea that advocacy should
+not be part of science, with a group of 43 members, led by &lt;a href="http://www.desmogblog.com/andrew-montford"&gt;Andrew
+Montford&lt;/a&gt;, attacking the
+outspoken stance of their leaders on climate change. The dissenting
+members published a report in 2012 entitled &lt;a href="http://www.thegwpf.org/images/stories/gwpf-reports/montford-royal_society.pdf"&gt;&lt;em&gt;Nullus in
+verba&lt;/em&gt;&lt;/a&gt;
+(the motto of the Society, which I take as simply an admonishment to
+remain sceptical). The report essentially chided the society for
+straying away from what they saw as pure science, arguing that the
+society has lost its way by engaging in advocacy. It is certainly true
+that the RS has somewhat cornered itself by advertising in The
+Philosophical Transactions (1753) that &lt;em&gt;"...it is an established rule of
+the Society, to which they will always adhere, never to give their
+opinion as a Body upon any subject either of Nature or Art, that comes
+before them"&lt;/em&gt;. Perhaps this is a case where a 262 year old idea doesn't
+perfectly map onto the modern era, or something crazy like that. (I
+would certainly not criticize the RS for being out of date in general
+though, as, to my mind they are doing great work in encouraging Open
+Science, and I am personally very excited to see how their new &lt;a href="http://rsos.royalsocietypublishing.org"&gt;Open
+Science journal&lt;/a&gt; will develop.)&lt;/p&gt;
+&lt;p&gt;In essence, Montford's group are dancing around the idea that advocacy
+puts the credibility of organizations and scientists at risk. A
+&lt;a href="http://www.sheffieldscienceinpolicy.com/blog/should-scientists-be-advocates-by-dr-aaron-thierry"&gt;post&lt;/a&gt;
+by Dr Aaron Thierry offers a point that ideologically opposes this which
+I agree with, that it is in-fact bad science, not advocacy, that
+threatens trust in scientists.&lt;/p&gt;
+&lt;p&gt;Either-way, the facts on the ground show clearly that the majority of
+public and also scientists support scientists voicing their opinions: &lt;a href="http://www.people-press.org/2009/07/09/section-4-scientists-politics-and-religion/"&gt;A
+Pew Research Poll in
+2009&lt;/a&gt;
+showed that a large majority of the public in the USA (76%), and nearly
+all scientists (97%), think that it is appropriate for scientists to
+become actively involved in political debates on controversial issues.
+Despite these numbers I think that there is still disagreement in the
+community as to what manner and extent of advocacy is appropriate.&lt;/p&gt;
+&lt;h3&gt;The personal element&lt;/h3&gt;
+&lt;p&gt;To get an idea of what the dialogue between scientists looks like on
+this topic for example you can see this twitter conversation &lt;a href="https://twitter.com/ClimateOfGavin/status/344458000091713538"&gt;from Gavin
+Schmidt&lt;/a&gt;.
+Speaking from experience I would say that most climate scientists are
+motivated by much more than just scientific curiosity. Many are at their
+heart idealists, motivated by a wish to create a sustainable future for
+mankind and ensure a biodiverse and healthy planet. So the idea that
+climate scientists should concern themselves only with carrying out and
+reporting research, not attempting to participate and shape public and
+political discussions seems incompatible with this idealism.&lt;/p&gt;
+&lt;p&gt;An obvious but key point is that scientists are citizens, and as &lt;a href="http://bigthink.com/age-of-engagement/do-scientists-have-a-special-responsibility-to-engage-in-political-advocacy"&gt;Nelson
+states in an
+interview&lt;/a&gt;,
+&lt;em&gt;"...citizens in a democracy have a moral obligation to actively promote
+within their society that which they are justified in thinking is right
+or good and to actively opposing that which they are justified in
+thinking is wrong or bad. Consequently, because they are citizens, every
+scientist has an obligation to be just and transparently honest
+advocates."&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Nelson goes on to capture the essence of what I previously mentioned
+when I said that personal bias interacts with scientific understanding
+(and vice versa) to shape our values and advocacy, when he states: &lt;em&gt;"If
+I admittedly and intrinsically value that which I study, and if in my
+study of it I discover threats to it, I think the leap to my willingness
+to act on its behalf is hardly a leap at all."&lt;/em&gt;.&lt;/p&gt;
+&lt;h3&gt;The damage&lt;/h3&gt;
+&lt;p&gt;So what is the harm with advocacy anyway? In my own background, I was
+exposed to the idea that advocacy is a form of bias -- a lack of
+impartiality -- and is consequently antithetical to Science. Moreover,
+as I mentioned worries have been voiced that advocacy damages the
+reputation of scientists in general. But I see this as a non-issue: to a
+scientist, bias has a specific meaning, markedly different from everyday
+use. In the world of science, impartial means limiting bias in
+experimental design and analysis, an integral process in science.
+Carefully designing hypothesis and experiments so that we, 'don't fool
+ourselves', as &lt;a href="http://www.brainyquote.com/quotes/quotes/r/richardpf137642.html"&gt;Richard Fenymann (approximately) put
+it&lt;/a&gt;.
+However, in common use, and particularly in relation to divided
+political issues, to be impartial means something else entirely:
+neutrality. These definitions are not compatible, and conflating them
+through linguistic sleight is a mistake, because it is fantasy to think
+that scientists are neutral.&lt;/p&gt;
+&lt;p&gt;For the &lt;a href="https://www.skepticalscience.com/global-warming-scientific-consensus.htm"&gt;overwhelming
+majority&lt;/a&gt;
+of climate scientists who agree with the conclusions of the IPCC, I
+would not for a moment believe that they are impartial with regards to
+questions of emission regulation or divestment in non-renewable
+resources. On this matter &lt;a href="http://stephenschneider.stanford.edu/Publications/PDF_Papers/Oxymoron1.pdf"&gt;Stephen Schneider
+said&lt;/a&gt;
+that we all have value positions, and it is our responsibility to make
+them conscious and explicit. Similarly, in his AGU talk, Gavin Schmidt
+echoed this point, stating &lt;em&gt;'Many believe in pretence of complete
+objectivity, and remain entirely neutral. Not true, how matter how hard
+we strive.'&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Another argument presented against advocacy implicitly appears in
+&lt;a href="http://www.theguardian.com/science/political-science/2013/jul/31/climate-scientists-policies"&gt;Tasmin Edwards Guardian
+piece&lt;/a&gt;,
+relating to perceived scientific authority and the potential dangers of
+promoting values from such a position. (Think of the psychological
+effect of the 'authority figure in the white coat' from the &lt;a href="https://en.wikipedia.org/wiki/Milgram_experiment"&gt;Milgrim
+experiments&lt;/a&gt;.) Without
+wanting to put words in her mouth, I assume that Edwards is being
+cautious of coercing potentially sheep-like minds with views that she
+recognizes as originating from her own values with perceived authority.
+I find it hard to worry too much on this point however, as the
+intentions of the climate community are to avert global catastrophe.
+Thus it seems to make little difference in this case if people are
+convinced out of trust/deference to a Milgrim-like authority figure, or
+because they understand the physical arguments. More importantly though,
+I think that there &lt;em&gt;is&lt;/em&gt; a clear and recognisable distinction between the
+scientist speaking, the scientific evidence they present, and the
+opinions/recommendations they give.&lt;/p&gt;
+&lt;p&gt;If we consider a scientist simply as a person who understands and
+practices the scientific method, acknowledging that just like all people
+they possess their own biases. And we consider Science itself to be the
+application of critical tests to ideas with the aim of arriving at an
+understanding of the material world. Then it seems quite plain that just
+because a scientist speaks in a public forum, does not mean they speak
+for Science (&lt;em&gt;nullus in verba&lt;/em&gt;). They can communicate the fruits of
+scientific labour and comment on them, but the spectre that they may
+speak with the authority of Science, forever damaging the reputation of
+scientists is misplaced.&lt;/p&gt;
+&lt;p&gt;For a view from the ground, my friend and colleague, &lt;a href="https://twitter.com/hansbrenna"&gt;Hans
+Brenna&lt;/a&gt;, a climate researcher currently
+investigating the role of volcanoes on stratospheric chemistry, believes
+that the logical result of arguments against advocacy are a slippery
+slope. Leading to the conclusion that if scientists are unable to
+advocate based on their understanding of scientific results and their
+own values, then no experts or person with competence in a field should
+be allowed to advocate based on their understanding of that field. He
+argues that this creates nonsensical results, making enlightened
+advocacy and public debate impossible. He suggests that the origin of
+this objection is most beneficial to a &lt;a href="https://en.wikipedia.org/wiki/Climate_change_denial"&gt;general PR campaign against
+climate
+scientists&lt;/a&gt;,
+encouraging politicians and public alike to ignore the advice of climate
+science. Hans says &lt;em&gt;"I'm afraid that if it succeeds on us, it will be
+brought to bear on other controversial topics in the future"&lt;/em&gt;.&lt;/p&gt;
+&lt;h3&gt;The conclusion&lt;/h3&gt;
+&lt;p&gt;Aside from being unrealistic, general calls to limit the advocacy of
+scientists may be detrimental or even destructive, by encouraging the
+removal of the voices of people who have the clearest understanding of
+the world and climate change from the public discussion.&lt;/p&gt;
+&lt;p&gt;As a final example, let's say you were sitting in a burning house, but
+for some reason you are unsure if the house is really burning (perhaps
+too much Descartes before bed). You call a scientist, who promptly
+arrives to determine if the house really is on fire. After doing the
+appropriate test, the scientist tells you that with a &amp;gt;99.9%
+probability the house, is, indeed on fire. He then hastens to add you
+should leave before you burn alive, as he considers that this would be
+undesirable. The difference between the scientific conclusion, and the
+policy advice should be clear. Is it inherently problematic for the
+scientist to suggest a course of action? Or rather, is it their moral
+imperative if they believe that your burning alive would be a bad thing?&lt;/p&gt;
+&lt;p&gt;I think that only a moral relativist could object to the above, as it
+would require arguing that it is wrong to assume simply because the
+scientist in my story does not wish to burn alive that they presume you
+would also value this outcome.&lt;/p&gt;
+&lt;p&gt;After considering this issue, I would say that the question of should
+scientists advocate is invalid, as, unless we wish to communicate via
+raw data, advocacy in some form is unavoidable. After acknowledging that
+all scientists are individually free to advocate or not as they wish,
+the real question is how to do so responsibly and ethically. I believe
+this comes down to the individuals making their value judgements clear.
+Again, Professor Stephen Schneider has already &lt;a href="http://stephenschneider.stanford.edu/Publications/PDF_Papers/Oxymoron1.pdf"&gt;lucidly outlined these
+points&lt;/a&gt;
+years ago.&lt;/p&gt;</summary><category term="Communication"></category><category term="Advocacy"></category><category term="Research"></category></entry><entry><title>A conversational climate</title><link href="https://benlaken.com/discussion-posts.html" rel="alternate"></link><published>2015-07-23T16:16:00+02:00</published><updated>2015-07-23T16:16:00+02:00</updated><author><name>Benjamin Laken</name></author><id>tag:benlaken.com,2015-07-23:discussion-posts.html</id><summary type="html">&lt;p&gt;&lt;img alt="" src="./images/conv_clim.png" /&gt;&lt;/p&gt;
+&lt;p&gt;This post differs from my usual fare as it follows the format of an FAQ
+of sorts. For me, it is representative of a conversation I have had a
+number of times now. I have found that the points raised are usually
+asked of me by people of a right-leaning political persuasion with some
+background knowledge of climate. But first some brief back-story to
+explain how this came about...&lt;/p&gt;
+&lt;p&gt;Recently the &lt;a href="http://lpc2e.cnrs-orleans.fr/~ddwit/TOSCA/TOSCA/Home.html"&gt;TOSCA
+group&lt;/a&gt; posted
+&lt;a href="https://www.youtube.com/watch?v=qtRPfc5zKNI"&gt;a series of short videos on
+YouTube&lt;/a&gt;, where they
+discussed their research in the field of Sun-Earth links for a general
+audience. They also re-posted &lt;a href="https://www.youtube.com/watch?v=qtRPfc5zKNI"&gt;my
+video&lt;/a&gt;. This ended with the
+conclusion that I am &lt;em&gt;'certain that the hypothesis which states the Sun
+is responsible for the majority of recent global warming via a link
+between cosmic radiation and clouds, is false'&lt;/em&gt;. (It is interesting to
+note that I think most researchers would at this point find this
+conclusion obvious and not at all controversial, while a small number
+may find it inflammatory.) I also closed by saying that despite this,
+there are still many open and interesting questions in the field of
+solar-terrestrial research. After gaining a few views, a comment was
+posted on the video to which I wrote a reply. There followed a series of
+questions and replies, which I thought would be useful to write up here.&lt;/p&gt;
+&lt;p&gt;I should preface this with the disclaimer that due to the nature of a
+free-flowing conversation large parts of this material stray outside my
+own area of active research, particularly towards the end. I have also
+not posted the original questions verbatim (which you can &lt;a href="https://www.youtube.com/watch?v=qtRPfc5zKNI"&gt;read
+here&lt;/a&gt;), but rather I have
+simplified and shortened them.&lt;/p&gt;
+&lt;h4&gt;Q: How can you say you are "certain" that cosmic rays aren't the cause of global warming - I thought certainty was unscientific?&lt;/h4&gt;
+&lt;p&gt;It is true that even our most well-tested hypotheses are only
+technically described as theories, not fact. This is down to the nature
+of a scientific hypothesis, they can only be disproven or withstand
+scrutiny, not positively proven. With this in mind, in my video I end by
+saying I am certain that a specific hypothesis has failed. I refer to
+the hypothesis that the Sun, via cosmic rays, is a principle driver of
+climate and a primary cause of recent climate change (see Svensmark's
+'Cosmoclimatology' &lt;a href="http://astrogeo.oxfordjournals.org/content/48/1/1.18.extract"&gt;paper
+here&lt;/a&gt; to
+read this idea in its original form). As the aforementioned hypothesis
+is making a testable knowledge claim, it is open to exacting scrutiny
+(it is this very quality that makes it a scientific hypothesis). So,
+although the scientific method cannot positively prove something, we may
+test it and perhaps disprove it. Currently, the hypothesis has failed a
+wide range of independent tests and can be considered thoroughly
+defunct. So while scientists may not say with definitive certainty they
+are sure something is true, they may say if specific claims are not
+true! In the same vein we could say we are certain the Flat-Earth
+hypothesis has failed.&lt;/p&gt;
+&lt;h4&gt;Q: I thought this cosmic ray-global warming hypothesis was a new idea: how can you dismiss it so readily?&lt;/h4&gt;
+&lt;p&gt;The field of Solar-Climate connections is very old (perhaps first
+appearing in scientific literature by William Herschel more than 200
+years ago). The idea that it is cosmic rays specifically that affect the
+Earth's weather is younger however, to my knowledge having been &lt;a href="http://www.nature.com/nature/journal/v183/n4659/abs/183451a0.html"&gt;first
+proposed in 1959 by Edward
+Ney&lt;/a&gt;.
+Some of the first suggestions of a mechanism for this link were along
+the lines of cosmic-rays induced atmospheric electricity and cloud
+droplets (&lt;a href="http://figshare.com/articles/Does_Europe_s_wind_respond_to_either_ENSO_or_the_Solar_cycle_/1471639"&gt;R.E. Dickinson,
+1975&lt;/a&gt;).
+&lt;a href="http://www.sciencedirect.com/science/article/pii/S1364682697000011"&gt;Sevensmark and Friis-Christensen
+(1997)&lt;/a&gt;
+first reported that satellite measurements of clouds showed evidence of
+this, to a sufficient degree to explain large portions of global warming
+as a natural phenomenon. But, as I discussed in &lt;a href="http://www.swsc-journal.org/articles/swsc/abs/2012/01/swsc120049/swsc120049.html"&gt;an open-access
+paper&lt;/a&gt;
+and &lt;a href="http://ccrg2013.blogspot.co.uk/2013/04/blog-entry-of-ben-laken-april-2013.html?view=timeslide"&gt;an earlier
+post&lt;/a&gt;,
+these observations did not hold weight, and over the last approximately
+20 years, many researchers have examined this claim through various
+independent methods, finding significant problems and null results. I
+myself have looked primarily at large-scale satellite observations to
+explore this idea (for example
+&lt;a href="http://onlinelibrary.wiley.com/doi/10.1029/2011GL049764/abstract;jsessionid=DFB5CE34983D36916606DFB0305E2483.f03t03?wol1URL=/doi/10.1029/2011GL049764/abstract&amp;amp;regionCode=ES&amp;amp;identityKey=1ed243b7-f978-42d9-82a1-f0e0d33fa9d4&amp;amp;isReportingDone=false"&gt;here&lt;/a&gt;,
+and
+&lt;a href="http://journals.ametsoc.org/doi/abs/10.1175/JCLI-D-11-00306.1"&gt;here&lt;/a&gt;),
+which show null results in terms of changes that could be significant to
+global warming. Cumulatively, this weight of evidence has led mainstream
+climate scientists to reject the idea of a significant cosmic ray cloud
+link, as outlined in &lt;a href="http://www.ipcc.ch/pdf/assessment-report/ar5/wg1/WG1AR5_Chapter07_FINAL.pdf"&gt;Chapter
+7&lt;/a&gt;
+Section 4.6 (page 613) of the IPCC fifth assessment report.&lt;/p&gt;
+&lt;h4&gt;Q: What about the politics of the science and scientists: isn't it true that this is some kind of mainstream climate-cult/conspiracy, wherein people who propose new ideas counter to mainstream views are automatically demonised and painted as 'climate deniers'?&lt;/h4&gt;
+&lt;p&gt;I have only made statements regarding ideas, not people. As far as I am
+concerned original thinking, constrained by reason and evidence, and
+open discussion should be valued in science. For another perspective on
+this field and its denizens, read the very &lt;a href="http://www.eenews.net/stories/1059974149"&gt;interesting article by
+journalist Paul Voosen&lt;/a&gt;. My
+statement of certainty regarding the falsehood of the cosmic ray--Global
+warming hypothesis is not a political one: it is purely based on
+evidence. That is not to say I don't have my own opinions and biases
+(like everyone), but in this case the hypothesis has failed numerous
+independent tests. That is the only relevant point, and the only reason
+for discarding it. The political aspect of this topic is a very
+different conversation, and for me the interesting question regarding
+the politics of climate science is actually the inverse of the above: it
+regards how disproportionate amounts of power, support, and reporting
+have been given to the minuscule number of so-called 'climate deniers'.
+It is both angering and motivating that for each clear message from the
+scientific community the 'deniers' calcified and pushed back, surely
+contributing to the delay of meaningful international action, as
+described in the book &lt;a href="http://www.merchantsofdoubt.org"&gt;The Merchants of
+Doubt&lt;/a&gt;. (A fact attested to by
+&lt;a href="http://www.theguardian.com/environment/2014/nov/17/climate-change-denial-scepticism-republicans-congress"&gt;politicians apparent acceptance of
+charlatans&lt;/a&gt;
+and &lt;a href="https://www.skepticalscience.com/skepticquotes.php"&gt;debunked myths&lt;/a&gt;
+as the basis to reject the science of climate change.)&lt;/p&gt;
+&lt;h4&gt;Q: But what about the Little Ice age in Medieval Europe: it correlates to a period of unusually low solar activity called a Grand Minimum. Is this not a big hint the Sun is important to climate?&lt;/h4&gt;
+&lt;p&gt;There may well be solar related mechanisms of regional importance worth
+investigating, likely related to dynamics. I have even recently done
+some work on this myself, regarding 200 years of regional weather
+conditions and solar phase. (This is currently under review, and I will
+write a blog post on it if/when it is accepted, although you can already
+view the work as an &lt;a href="http://figshare.com/articles/Does_Europe_s_wind_respond_to_either_ENSO_or_the_Solar_cycle_/1471639"&gt;IPython notebook on
+figshare&lt;/a&gt;.)
+As I mentioned at the end of my video, there is still much work to be
+done, and discounting the aforementioned cosmic ray-climate change
+hypothesis doesn't close the door on many interesting solar-terrestrial
+pathways which may indeed impact regional climate variability. TOSCA has
+produced a book, which will be shortly published, summarising the large
+body of interdisciplinary work in this field which is ongoing. A key
+point however, is that regional climate variability is most certainly
+not the same thing as global climate change, for more on this
+distinction in relation to solar forcing see &lt;a href="http://iopscience.iop.org/1748-9326/5/2/021001/pdf/1748-9326_5_2_021001.pdf"&gt;Benestad
+2010&lt;/a&gt;.
+It essentially means that the interest in the role of the Sun is on
+processes that affect regional-scale variability, not global trends.&lt;/p&gt;
+&lt;h4&gt;Q: Despite what you have said about the Sun not impacting climate change, isn't it true that Scientists don't understand everything about the climate? And if so, how can they be so sure we should make policy changes?&lt;/h4&gt;
+&lt;p&gt;As made crystal clear by the efforts of the IPCC, the science is settled
+and has been for a long time with regard to having sufficient
+information for policy makers to go out and make positive changes. (Of
+course, this itself is a bit exasperating, as the old joke goes, the
+politician stands up and asks &lt;em&gt;"What if Climate Change is all a hoax and
+we make a better world for nothing?"&lt;/em&gt;). Unfortunately, I would say the
+clarity of the climate science community, despite earning a Nobel prize,
+has proved largely irrelevant. Why is this? Well, perhaps you will think
+this cynical, but I would say that the explanation for this failure can
+be caricatured thusly: When policy-makers want support for a given
+action, they call upon an 'expert' to offer scientific rational. But
+inversely, if particular scientific conclusions are contrary to a
+desired policy, they will ask their expert source &lt;em&gt;"is everything about
+this understood?"&lt;/em&gt;, to which the scientist will diligently and
+invariably answer &lt;em&gt;"No, of course we don't understand everything"&lt;/em&gt;. This
+is just the nature of science, but nuances like that have a habit of
+leeching out of a public debate. At this point, the trap is sprung and
+the conclusion is &lt;em&gt;"Well, we simply cant do anything before we can be
+100% sure. More research is needed before action can be taken."&lt;/em&gt;. Again,
+this is just a simplification, and is only one of many tactics to take
+the clarity out of a scientific argument, but it is suitably
+illustrative to show that scientific findings alone are often lame to
+drive policy changes. These themes are explored in detail in &lt;a href="http://www.merchantsofdoubt.org"&gt;The
+Merchants of Doubt&lt;/a&gt;, and I would
+recommend you read it.&lt;/p&gt;
+&lt;h4&gt;Q: But what about climate models: I don't believe they are accurate 100 years into the future, and they seem to be doing a bad job now. How can we base policy on models we can't trust?&lt;/h4&gt;
+&lt;p&gt;Well one thing to keep in mind is the models are statistically
+projecting future climate states, not predicting future weather. I think
+many of them don't capture sub-decade time-scale variability well, such
+as that arising from internal oscillations in complex systems. So it
+isn't really a big issue to my mind that the model predictions deviate
+from observations for what seems to us to be relatively long periods.
+(Although I may well be mistaken here, as climate models are not my
+field.) They are certainly an imperfect tool, missing,
+miss-representing, and are even inherently incapable of reproducing some
+processes. But despite that, they are also still the best tool we have
+for projecting the future consequences of our emissions. In particular,
+we should pay attention to where there is clear agreement between the
+models. For example, all models show the majority of surface will warm
+significantly over the next century, and experience intense and more
+frequent heat-waves.&lt;/p&gt;
+&lt;p&gt;The real message of the models for me anyway, is not the small details a
+century into the future--which depending on the exact parameter may be
+quite uncertain--but the message that continued anthropogenic emissions
+(and the energy imbalance we have already created) will significantly
+alter the climate system in a way that makes it more hostile for human
+civilization. This really is bad news for a species that depends on the
+current status quo of the climate for agriculture and resource
+management.&lt;/p&gt;
+&lt;p&gt;I imagine that it is the changing probability of extreme events, and
+patterns of variability that will be the primary problem for human
+civilisation: Years of successive extreme events in key areas for people
+and resources, made more likely by anthropogenic climate forcings, will
+be far more dangerous to existing global economic social and political
+systems than the relatively slow change in global mean conditions a
+century from now. (Although the flooding of coastlines and
+ocean-acidification will surely take their toll in due course.) The
+aforementioned human socio-economic systems have already demonstrated
+their fragility and inter-connectedness for example during the recent
+global financial crisis: even climatologists studying ENSO must stop and
+marvel at the teleconnections that cause a property speculation in the
+USA to be linked to global economic shock waves. To my mind at least,
+the most immediate global danger of climate change is to add a
+potentially destabilising wild card to global socio-economic systems.
+Albeit, a wild card that scientists have been clearly warning society
+about now for several decades.&lt;/p&gt;
+&lt;p&gt;As I write the final lines of this post, James Hansen and others have
+&lt;a href="http://www.atmos-chem-phys-discuss.net/15/20059/2015/acpd-15-20059-2015.pdf"&gt;just posted in ACPD a
+paper&lt;/a&gt;
+that makes a similar point in far more exacting way, so I will close by
+citing a paragraph from their conclusions:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;"Our analysis paints a different picture than IPCC (2013) for how this
+Hyper-Anthropocene phase is likely to proceed if GHG emissions grow at a
+rate that continues to pump energy at a high rate into the ocean. We
+conclude that multi-meter sea level rise would become practically
+unavoidable. Social disruption and economic consequences of such large
+sea level rise could be devastating. It is not difficult to imagine that
+conflicts arising from forced migrations and economic collapse might
+make the planet ungovernable, threatening the fabric of civilization."&lt;/em&gt;&lt;/p&gt;</summary><category term="Sun"></category><category term="Climate"></category><category term="Science"></category></entry><entry><title>TOSCA launches short YouTube documentary series</title><link href="https://benlaken.com/TOSCA_documentaries.html" rel="alternate"></link><published>2015-07-17T09:00:00+02:00</published><updated>2015-07-17T09:00:00+02:00</updated><author><name>Benjamin Laken</name></author><id>tag:benlaken.com,2015-07-17:TOSCA_documentaries.html</id><summary type="html">&lt;p&gt;TOSCA has just launched a series of short documentaries summarising the work we have been doing over the past few years on their &lt;a href="https://www.youtube.com/channel/UCY8dL-P9JtEj6ulpFM0sO2w"&gt;YouTube channel&lt;/a&gt;. My contribution is embedded below:&lt;/p&gt;
+&lt;p&gt;&lt;div class="videobox"&gt;
+                &lt;iframe width="640" height="390"
+                    src='https://www.youtube.com/embed/qtRPfc5zKNI'
+                    frameborder='0' webkitAllowFullScreen mozallowfullscreen
+                    allowFullScreen&gt;
+                &lt;/iframe&gt;
+            &lt;/div&gt;&lt;/p&gt;</summary><category term="TOSCA"></category><category term="Sun"></category><category term="Climate"></category><category term="YouTube"></category></entry><entry><title>Evidence the solar cycle affects human fertility and life-span?</title><link href="https://benlaken.com/solarcycle_human_fertility.html" rel="alternate"></link><published>2015-06-15T05:31:00+02:00</published><updated>2015-06-15T05:31:00+02:00</updated><author><name>Benjamin Laken</name></author><id>tag:benlaken.com,2015-06-15:solarcycle_human_fertility.html</id><summary type="html">&lt;p&gt;&lt;img alt="alt text" src="./images/solar_death.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Earlier this year some colleagues emailed around the latest paper
+claiming a strong causal relationship between the solar cycle and some
+Earth-bound phenomena, in this case the fertility and lifetime of people
+born during different phases of the solar cycle in Norway from historic
+records. Usually, such studies are cause for some mirth, and make for
+useful examples of common statistical problems, see for example the
+relationship between &lt;a href="http://www.academicjournals.org/article/article1380707205_Verma.pdf"&gt;cosmic rays and car
+crashes&lt;/a&gt;,
+or &lt;a href="http://www.sciencedirect.com/science/article/pii/S1364682602000329"&gt;heart attacks and the solar
+cycle&lt;/a&gt;.
+The study was carried out by a group of Norwegian researchers and
+published in the prestigious Proceedings of the Royal Society B, and
+could be considered to be a confirmation study as it notes that it is
+supported by earlier findings.&lt;/p&gt;
+&lt;p&gt;The paper is &lt;a href="http://rspb.royalsocietypublishing.org/content/282/1801/20142032"&gt;"Solar activity at birth predicted infant survival and
+women's fertility in historical
+Norway"&lt;/a&gt;,
+by &lt;a href="http://www.ntnu.no/ansatte/gine.skjarvo"&gt;Gine Roll Skjærvø†&lt;/a&gt;, &lt;a href="http://www.ntnu.edu/employees/frode.fossoy"&gt;Frode
+Fossøy&lt;/a&gt; and &lt;a href="http://www.ntnu.no/ansatte/eivin.roskaft"&gt;Eivin
+Røskaft&lt;/a&gt; of the Department of
+Biology, Norwegian University of Science and Technology (NTNU), in
+Norway.&lt;/p&gt;
+&lt;p&gt;Being of a sceptical orientation I of course wished to see the data for
+myself, as did numerous others. So followed an interesting email
+exchange with the authors and several other researchers who were all
+eager to sink their teeth into the original data. At first the authors
+were very reticent to share their code and data, and they were
+apparently unaware that Proc. Roy. Soc. B has a &lt;a href="http://royalsocietypublishing.org/data-sharing"&gt;policy regarding open
+access&lt;/a&gt;, which is summed
+up as "the right to read is the right to mine". It means that any
+analysis published in their journal must support open code and data, and
+so after this was pointed out to the authors, they shortly sent out a
+version of their data and R code. Which you too can download exactly as
+I received it
+&lt;a href="http://www.files.benlaken.com/documents/Solar_Norway_orignal_files.zip"&gt;here&lt;/a&gt;.
+If you struggle to reproduce all their results from these files alone
+however you will not be alone, and I suggest you can &lt;a href="mailto:roskaft@bio.ntnu.no"&gt;email Prof. Eivin
+Roskaft directly&lt;/a&gt; for further explanation
+and potentially missing data/code.&lt;/p&gt;
+&lt;p&gt;The paper has received relatively high-amounts of attention and been
+absorbed into news networks and social media. You can see the paper is
+in the top 5% of articles in the
+&lt;a href="http://www.altmetric.com/details/3043510"&gt;Altmetrics&lt;/a&gt; system, and ranks
+in the 97th percentile of attention for articles published around the
+same time. So, what are the claims of the article to warrant such
+attention?&lt;/p&gt;
+&lt;p&gt;The study analysed Church records from Norway between 1676 and 1878,
+examining features such as recorded births and deaths. The authors
+reached several strong conclusions, such as being born during solar
+minimum reduces the likelihood of surviving to adulthood by cutting
+human lifespan by 5.2 years. The authors essentially proposed that this
+was due to higher levels of UVB received by unborn babies.&lt;/p&gt;
+&lt;p&gt;When looking at solar-correlation studies, I often find that many are a
+quagmire of messy logic, so much so that it is difficult to know where
+to start assessing their validity. Personally, I like to go straight for
+the core finding, the most significant result, and work outward from
+there. If there is a problem with the core result, then I will consider
+the study in error and stop, if not I will keep going until all claims
+withstand scrutiny.&lt;/p&gt;
+&lt;p&gt;In this paper one of the most purportedly statistically significant
+claims is that solar activity is significantly related to the number of
+children born (fertility) in lower-class women, with these women bearing
+on average 0.14 less children during the solar maximum than during the
+solar minimum (p=0.027). This relationship did not hold true for the
+higher-class women. The sample of lower-class women was drawn from 621
+individuals over 162 years, while the upper-class women sample was drawn
+from 1222 individuals over 202 years. These results are shown below, and
+are a bar chart comparison of the mean fertility (with some uncertainty
+estimate) for upper (wealthy) and lower (poor) class women in Norway.
+Indeed, the upper-class women have a similar fertility in years of solar
+maximum and solar minimum, while the lower-class women show a seemingly
+clear difference in the mean.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="./images/Norway_solar_fig2.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Fertility (mean + s.e.) in relation to solar activity for men and for
+women in relation to socio-economic status. *p , 0.05. Dark grey bars
+denote SSmax, light grey bars denote SSmin. &lt;a href="http://rspb.royalsocietypublishing.org/content/282/1801/20142032"&gt;adapted from Figure
+2.&lt;/a&gt;
+Now, I don't wish to be disparaging of fellow researchers, however,
+there are common stereotypes in science that Biologists on the whole
+have some issues with statistics and reproducible results (for example
+see
+&lt;a href="http://www.nature.com/news/irreproducible-biology-research-costs-put-at-28-billion-per-year-1.17711"&gt;here&lt;/a&gt;
+or
+&lt;a href="http://blogs.discovermagazine.com/fire-in-the-mind/2014/01/29/raw-data-widespread-problem-irreproducible-results/#.VXtbTWA7Spo"&gt;here&lt;/a&gt;).
+Indeed, it does seem to be the case here that the authors have simply
+run some data through an R-package without clearly understanding what is
+going on, and consequently are led to what I am now confident are
+unjustifiable conclusions. I say this as I have gone back over their
+data and created a simple IPython Jupyter notebook (available on
+&lt;a href="https://github.com/benlaken/Nbks/blob/master/Historical_birth_analysis.ipynb"&gt;Github&lt;/a&gt;)
+to see what is really going on. The details delve into a particularly
+favourite topic of mine, random sampling. If you want details on the
+method I use below you can find them in an open-access article of mine
+published in the &lt;a href="http://www.swsc-journal.org/articles/swsc/abs/2013/01/swsc130020/swsc130020.html"&gt;Journal of Space Weather and Space
+Climate&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Firstly, my notebook shows the basic results of the fertility difference
+are reproducible: this time instead of a simple bar-chart, I have used
+notched box-plots. These show more details, in particular giving a
+better idea of how similar the means of the population are, and also the
+whole population distribution. The notches are in fact a statistical
+test of a kind, they show the position of the mean value with a 95%
+confidence. The figure shows that while the mean of the solar minimum
+population is larger than at solar maximum, there is still pretty
+clearly some overlap in the values. So the big question here is, how
+significant are the differences in the means between the low-class
+women's fertility at solar maximum &lt;em&gt;vs.&lt;/em&gt; solar minimum? In particular, I
+want to know are these differences distinguishable from random samples.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="./images/Solar_norway_boxplots.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Notched box-plots showing differences in fertility by gender, and social
+class (female only) during solar minimum (blue) and solar maximum (red)
+periods. See
+&lt;a href="https://github.com/benlaken/Nbks/blob/master/Historical_birth_analysis.ipynb"&gt;Notebook&lt;/a&gt;
+for more details.
+Before I answer this question though, there is another important factor
+to consider that should be quite a red-flag here. While the authors have
+stated the original sample sizes of their groups (e.g. n = 621
+lower-class women, n = 1222 upper-class women), this does not give you
+any clear indication of how the samples are broken up when sub-divided
+into solar maximum and minimum periods. From my box-plot I included
+these numbers: You can see that for high-class women the split is 239 to
+983, while for the lower-class women 125 to 496. Thus the samples are
+certainly not even, and while this isn't automatically a problem (as
+many statistical tests can account for this), it is a problem if you
+wish to directly compare properties of the sub-samples (such as mean
+values), because, as I will show below sub-sampling can result in
+different distributions (particularly when the sub-samples are
+relatively small).&lt;/p&gt;
+&lt;p&gt;So, how to see the statistical significance of the mean value? There is
+an easy way with a Monte Carlo approach. It simply involves starting
+from the full n = 621 group of lower-class females, and then randomly
+taking a sub-sample of that population. You find the mean of that
+sub-sample, make a note of it, and then repeating this procedure
+over-and-over again, say 100,000 times (best not to try it by hand...).
+The only complication is that you have to make sure that you are taking
+a sample of the same size (n) as the one you are interested in
+evaluating (in this case it means that the solar maximum and minimum
+samples must have different Monte Carlo populations, as they had n = 145
+and n = 496 respectively).&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="./images/Solar_norway_distrib.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Monte Carlo distributions of random cases drawn from the low-class women
+fertility data, with sample sizes matching the solar maximum (n=125) and
+solar minimum (n=496)samples. The blue lines show the mean (and
+uncertainty) of the actual samples. See
+&lt;a href="https://github.com/benlaken/Nbks/blob/master/Historical_birth_analysis.ipynb"&gt;Notebook&lt;/a&gt;
+for more details.
+So, from the Monte Carlo approach, I created two distributions of mean
+values, the results of which are visible as a PDF (probability density
+function) as the grey shaded regions in the above figure. These
+represent the null-case, that is to say that they are the means you
+could expect to get when nothing special is going on in the samples
+(i.e. this is what the range of values for no relationship between solar
+activity and fertility should look like). To these distributions I have
+over-plotted the mean value of the samples the authors obtained (and the
+uncertainty, i.e. possible range of values), shown in the blue lines.
+So, you can qualitatively interpret this figure by comparing the
+position of the blue lines against the grey distribution values: the
+more towards the middle of the grey distribution the less unusual it is.
+You see immediately that the blue range is quite large, spanning a
+considerable portion of the distribution in both cases, and is not
+located in the tails (unusual portions) of the distributions.&lt;/p&gt;
+&lt;p&gt;In the end, this shows that the solar minimum fertility of the
+lower-class women (of 4.09 ±0.12) ranks in the 77.8th percentile with
+upper and lower certainty values of 96.0 and 41.51 percentile
+respectively compared to random samples. The Monte Carlo has shown a
+Gaussian distribution fits the data, and so I can use the sigma values
+to estimate probability: The average value of the solar minimum sample
+has a sigma of 0.77 (with an uncertainty range between 1.76 to -0.22
+sigma). This translates to a two-tailed probability value of p=0.44,
+with the potential to be anywhere between p=0.08 and p=0.83. So, nothing
+unusual there.&lt;/p&gt;
+&lt;p&gt;The solar maximum sample mean (of 3.62 ±0.25) for lower-class women is
+certainly more shifted to the tail of the PDF, at the 6.2th percentile,
+and a upper/lower 95% certainty range of 0.4th / 30.6th percentile. This
+relates to a mean sigma value of -1.53 with uncertainty over a range of
+-2.56 to -0.51, relating to two-tailed probability values of p=0.13, and
+an uncertainty range over p0.01 to p0.61. So while it is tending towards
+significance in the most favourable estimates of the mean, it is
+definitely not highly significant.&lt;/p&gt;
+&lt;p&gt;To me, these results do not support the authors claim of a highly
+p&amp;lt;0.05 significant difference between fertility of low-class women at
+solar maximum and minimum. As this was the strongest result presented, I
+am no longer motivated to check the results further, but if you are
+particularly interested to further the notebook I am happy to accept
+pull-requests.&lt;/p&gt;
+&lt;p&gt;I think it is interesting to note though, the authors go quite far in
+their interpretation of their results, writing: "&lt;em&gt;Our findings suggest
+that maternal exposure to solar activity during gestation can affect the
+fitness of female children.&lt;/em&gt;" They ask, "&lt;em&gt;Why, then, is the fitness of
+women more sensitive to high solar activity during early life than is
+the fitness of men? First, solar activity could differentially affect
+the abortion rate of male and female fetuses. If only the most robust
+male fetuses survive, while all female fetuses survive, male fertility
+could be less affected.&lt;/em&gt;". They go on to say "&lt;em&gt;[An] explanation for
+the observed gender differences is that the development of the
+reproductive organs is more costly in females than in males, and thus
+more at risk for developmental abnormalities when exposed to a stressor
+during organogenesis [44]. Concurrently, as the developmental period
+of the reproductive organs in the two sexes is different, testicular and
+ovarian organs most likely experience different hazards of in utero
+exposure [44] to, for example, UVR.&lt;/em&gt;"&lt;/p&gt;
+&lt;p&gt;This is a good example of how with a little data, black-box statistics,
+some jargon, and a lot of imagination you can end up somewhere rather
+far from Science. So, to conclude: I wouldn't suggest anyone loose sleep
+worrying about having lost 5.2 years by being born during the wrong
+solar phase, and I would say this is yet another example of why
+manuscripts need to have code and data as visible and important as the
+manuscripts themselves.&lt;/p&gt;</summary><category term="Sun"></category><category term="Statistics"></category><category term="p-hacking"></category></entry><entry><title>Helping at the Software Carpentry course Oslo June 2--3rd</title><link href="https://benlaken.com/swc_oslo_2015.html" rel="alternate"></link><published>2015-06-05T08:12:00+02:00</published><updated>2015-06-05T08:12:00+02:00</updated><author><name>Benjamin Laken</name></author><id>tag:benlaken.com,2015-06-05:swc_oslo_2015.html</id><summary type="html">&lt;p&gt;&lt;img alt="" src="./images/swc_oslo.jpeg" /&gt;&lt;/p&gt;
+&lt;p&gt;Helping at the &lt;a href="http://software-carpentry.org"&gt;Software Carpentry&lt;/a&gt;
+course, June 2--3rd Oslo run by &lt;a href="https://twitter.com/lexnederbragt"&gt;Lex
+Nederbragt&lt;/a&gt;&lt;a href=""&gt;&lt;/a&gt;, certainly gave me a
+lot to consider. The two-day course taught novice users Bash, Git, and
+Python (&lt;a href="https://jupyter.org"&gt;Jupyter Notebook&lt;/a&gt;). Three invaluable and
+complimentary tools which are the centre of my own work-flow. I was
+excited to see how people were introduced to these tools and the
+Software Carpentry teaching methods. The collaborative &lt;a href="http://software-carpentry.org/lessons.html"&gt;Git-based lesson
+materials&lt;/a&gt; are especially
+nice, and I can only hope this teaching model spreads far and wide. I
+certainty appreciated running through the course material, and in
+particular I don't remember seeing a clearer introduction to Git and
+Bash.&lt;/p&gt;
+&lt;p&gt;Myself, I stumbled into the use of Bash, Git and Python one-by-one over
+time and learned alone through a lot of trial-and-error (and Youtube)
+over a relatively long period of time. So I was quite curious to see how
+the students would absorb so much information so quickly, and if it
+would really change the way they intend to work in the future. The
+students were very competent, and I got the feeling that they quickly
+realized the possibilities for these tools. In fact there was very
+little for the helpers to do, as the students (and even their computers)
+were all operating excellently!&lt;/p&gt;
+&lt;p&gt;The Software Carpentry Information for helpers and teaching instructions
+was superb, and certainly gave me a few things to consider. I had seen
+&lt;a href="https://twitter.com/gvwilson"&gt;Greg Wilson&lt;/a&gt;, the creator of Software
+Carpentry talk about some of the ideas underpinning the group on Youtube
+(&lt;a href="https://www.youtube.com/watch?v=Q7wyA2lbPaU"&gt;for example see here&lt;/a&gt;),
+and had been meaning to follow his suggested readings on the subject of
+teaching (such as &lt;a href="http://www.amazon.com/How-Learning-Works-Research-Based-Principles/dp/0470484101"&gt;How learning Works by Susan Ambrose et
+al&lt;/a&gt;).
+Following the course recommendations about the use of language and
+computer etiquette to students was a valuable experience: for example,
+not using the word 'just' (as they consider that it immediately sets a
+tone of inaccessibility), and not taking-over keyboards when students
+run into trouble or using short-cuts to fix problems. These were quite
+an adjustment at first, as without being aware of it, these actions were
+definitely my default setting ("Ah, a problem? You should just do thing
+x! **while I type a blur of short-cut keys**" - I can see how that
+might be sub-optimal for student-learning...). So I immediately felt
+making the small changes the course suggested forced me into a much more
+user-friendly state for the students!&lt;/p&gt;
+&lt;p&gt;To improve the course though, I think that I would have tried to
+emphasise some real-world use cases from the Jupyter Notebook. As, even
+if the students can't understand yet how they were built, they would at
+least see what is be possible. For me at least, seeing people working at
+a high-level in these tools was a big motivation for self-improvement,
+as I realised that these were the tools that could take your work to a
+new level and were the tools worth investing time in learning. By only
+presenting a simplified use cases I got the feeling that although
+everyone probably left with a good handle on what was covered, perhaps
+they were still largely unaware of the possibilities in Python and the
+Jupyter Notebook for Open Science, which for me is the most interesting
+and exciting part.&lt;/p&gt;</summary><category term="Software Carpentry"></category><category term="Teaching"></category></entry><entry><title>Saharan dust over the North Atlantic</title><link href="https://benlaken.com/calima.html" rel="alternate"></link><published>2015-05-29T09:48:00+02:00</published><updated>2015-05-29T09:48:00+02:00</updated><author><name>Benjamin Laken</name></author><id>tag:benlaken.com,2015-05-29:calima.html</id><summary type="html">&lt;p&gt;Between 2010 and 2014 I was a postdoc at the Instituto de Astrofísica de
+Canarias on the island of Tenerife of the &lt;a href="http://en.wikipedia.org/wiki/Canary_Islands"&gt;Canary
+Archipelago&lt;/a&gt;. From time to
+time, we would experience extreme climate events known locally as
+Calima. These are periods where mineral dust from the Sahara, exported
+in discrete and often-dramatic outbreak events, are suspended in the
+air. The Calima conditions last from hours to days. During this time
+dramatic changes occur in the local climate.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="./images/terra.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Terra MODIS false colour image of a strong Calima event over the Canary
+Islands&lt;/p&gt;
+&lt;p&gt;Although like most aerosols, mineral dust increases the Earth’s
+reflectance of short-wave radiation, the dust also absorbs radiation –
+i.e. the dust both reflects and absorbs short-wave radiation, the
+specific proportions with which it does so are determined by a variety
+of factors such as the angle of incidence, and surface properties of the
+mineral dust grains. As a result of the dusts radiative impact, air
+containing the suspended dust is hotter than it would otherwise be.
+Consequently, when Calima is present, air temperature increases with
+height in the troposphere, creating an inversion: normally at the
+latitudes of the Canary Islands, air temperature decreases through the
+troposphere until the tropopause (around 10 km above sea level). Indeed,
+in the same way the temperature boundary between the troposphere and
+stratosphere traps the Earth’s weather systems within the troposphere,
+the miniature and localised temperature inversions associated with the
+Calima trap the hot, windless air over the Canary Islands – normally a
+rather unpleasant experience for their ~2,120,000 inhabitants.&lt;/p&gt;
+&lt;p&gt;Calima is interesting, as, far from being a phenomenon of merely
+localised impacts, the transport of Saharan mineral dust westwards over
+the North Atlantic (and indeed in many other directions) actually has
+impacts across the globe. Perhaps of most note is the dusts role in
+maintaining primary-productivity over the Amazon basin – dust from the
+Sahara is a crucial fertiliser to the Amazon rainforest. The dust not
+only fertilisers terrestrial photosynthesises, but also primary
+productivity of oceans: algal blooms resulting from mineral dust
+fertilisation are visible from space, and constitute a significant
+element of the global ecosystem. There are also more diverse and curious
+impacts of the dust, ranging from the creation of the ominously titled
+blood-rain; to influences on soil development around the world; or
+providing the rare type of particles able to act as Ice Forming Nuclei
+in clouds found to be influential as far away as Alaska; the dust has
+even been indirectly linked to the death of coral in the Caribbean by
+providing a vector for spores producing Sea Fan disease.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="./images/Haboob.png" /&gt;&lt;/p&gt;
+&lt;p&gt;A dramatic Haboob over Arizona, USA - much dust is entrained over the
+Sahara by similar Haboobs over Africa. These occur seasonally in
+association with the movement of the Inter Tropical Discontinuity over
+the Saharan region. The resulting formation of mesoscale convective
+systems and associated cold tongues generates Haboobs. Image credit
+Daniel Bryant&lt;/p&gt;
+&lt;p&gt;Although the Sahara and Sahel of North Africa is the largest source of
+mineral dust, which, itself is the largest constituent of the global
+aerosol burden by mass, there was relatively little known about it until
+recently. This is changing following the efforts of scientists in
+numerous monitoring campaigns such as SAMUM (&lt;a href="http://samum.tropos.de/"&gt;the SAharan Mineral dUst
+experiMent&lt;/a&gt;) and the &lt;a href="http://fennec.ouce.ox.ac.uk/"&gt;Fennec
+project&lt;/a&gt;. Following successes of such
+campaigns and other studies, scientists have pinpointed key regions
+important to the entrainment of dust over the Sahara, and the mechanisms
+by which the dust is entrained and exported and eventually deposited.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="./images/Meteosat.png" /&gt;&lt;/p&gt;
+&lt;p&gt;The immense scale of the dust outbreaks can be appreciated from 36,000
+km above the Earth, courtesy of the thermal infra-red (IR) channel from
+Meteosat 3~rd~ generation satellite platform (taken on 03/03/2004). A
+strong dust outbreak event is visible over North Africa as white
+(relatively low IR emission) region against the darker (high IR
+emission) land surface. Image from NEODAAS Dundee Satellite Receiving
+Station, credit EUMETSAT/NERC/Dundee University.&lt;/p&gt;
+&lt;p&gt;Monitoring dust export events from the Sahara can be performed by
+through ground-based measurements, satellite observations, or
+palaeoclimatic reconstructions. All of these methods have different
+benefits and limitations. Recently, in &lt;a href="http://onlinelibrary.wiley.com/doi/10.1002/qj.2170/abstract"&gt;a
+paper&lt;/a&gt;
+published in the Quarterly Journal of the Royal Meteorological Society,
+I have used nightly optical extinction data taken from the Carlsberg
+Meridian Telescope located on La Palma recorded over an approximately 30
+year period to reconstruct the summertime Calima frequency experienced
+at the Canary Islands. These data show that in summer months between
+1983 and 1997 Calima went from occurring around 50% of the time to only
+around 10% of the time; then for the remaining period of data (2000 –
+2012), the summertime Calima showed no long term trend, essentially
+remaining consistent around 15% of the time, with year-to-year
+variations of around 20%. An update to this work should be forthcoming
+with improved data.&lt;/p&gt;
+&lt;p&gt;Frequency of Calima events (%) during the high dust season months
+(July–September),from 1984 to 2012. These data were derived from optical
+extinction measurements made &lt;em&gt;in situ&lt;/em&gt; at the Island of La Palma.
+Adapted from Figure 6 of &lt;a href="http://onlinelibrary.wiley.com/doi/10.1002/qj.2170/abstract"&gt;Laken et al.
+2013.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Analysis of the variations in summer time Calima occurrence in relation
+to a variety of climate indexes showed that the majority (~50%) of the
+observed variations in summertime Calima experienced annually are linked
+to changes in the North Atlantic Oscillation (NAO) occurring around
+10-months earlier; this was likely due to a connection between the NAO
+and rainfall anomalies over North Africa, as moisture reduces the amount
+of dust for several reasons. Previous studies of Saharan dust outbreaks
+over the Canary Islands using different datasets and focusing on other
+times of the year have also shown statistical associations to the NAO.
+This result is not so surprising, as it is logical that the weather over
+the Atlantic should have a significant impact on the properties (e.g.
+if, how, when, and where) dust may be exported from the African
+continent over the North Atlantic region. However, the exact mechanisms
+which link variations in the NAO 10-months earlier to summertime Calima
+experienced at specific regions (such as the Canary Islands) are
+currently unclear, and are certainly a subject for further study.&lt;/p&gt;</summary><category term="Aerosols"></category><category term="Climate"></category><category term="Statistics"></category><category term="Remote Sensing"></category></entry><entry><title>Changes in carbon monoxide pollution 2000–2012</title><link href="https://benlaken.com/co_pollution.html" rel="alternate"></link><published>2015-05-08T09:36:00+02:00</published><updated>2015-05-08T09:36:00+02:00</updated><author><name>Benjamin Laken</name></author><id>tag:benlaken.com,2015-05-08:co_pollution.html</id><summary type="html">&lt;p&gt;Carbon monoxide (CO) is one of 6 major air pollutants regulated by
+countries such as the USA. It is a product of combustion like its
+closely related cousin carbon dioxide, however, unlike carbon dioxide,
+it is formed by incomplete or inefficient combustion. While carbon
+dioxide is an important greenhouse gas contributing to human-induced
+warming of the globe, carbon monoxide does not contribute to warming.
+Unlike carbon dioxide however, it has the potential to significantly
+influence atmospheric chemistry.&lt;/p&gt;
+&lt;p&gt;This is because carbon monoxide is a substance which has undergone only
+a partial chemical reaction, and thus has great potential to react
+further: for those of you who recall the OIL RIG acronym (Oxidation Is
+Loss, Reduction Is Gain) from chemistry class relating to
+oxygen/electron transfer, carbon monoxide is a reducing agent: i.e. it
+removes oxygen from other molecules. Consequently, in combination with
+other pollutants and the light from the Sun carbon monoxide is involved
+in reactions which form dangerous tropospheric ozone and also urban smog
+— both a nuisance and significant hazard to human health and the
+environment.&lt;/p&gt;
+&lt;p&gt;Due to its reactive nature, its lifetime in the atmosphere is quite
+short (a few months only). As a result, the concentrations of carbon
+monoxide are very unevenly distributed (i.e. it is heterogeneous).
+Without time to persist and travel large distances, the highest carbon
+monoxide concentrations in the atmosphere are found close to emission
+sources. This makes it particularly useful for highlighting centres of
+human activity and also changes in activity over relatively short
+time-scales.&lt;/p&gt;
+&lt;p&gt;Carbon monoxide emissions have been measured in the troposphere
+continuously by satellite since March 2000 by an instrument named MOPITT
+(Measurements of Pollution In The Troposphere). It is an instrument
+designed and built by the Canadian Space Agency (CSA), and housed
+on-board NASA’s polar-orbiting Terra satellite. Horizontally, these
+measurements cover the whole globe. Vertically they are most sensitive
+to CO in the middle troposphere (~500mb or 12,000 feet). MOPITT
+requires cloud-free (clear-sky) atmosphere to determine carbon monoxide,
+consequently this causes some issues with high-latitude data (&amp;gt;65
+degrees), as problematic identification of cloud cover over
+high-latitude ice-covered surfaces can cause some errors.&lt;/p&gt;
+&lt;p&gt;I recently performed a study on the MOPITT data, in this work—&lt;a href="http://www.mdpi.com/2225-1154/2/1/1"&gt;available
+in the open access MDPI journal
+Climate&lt;/a&gt;. I initially wanted to see
+if the pollution measurements could be used to identify periodic
+variations in emissions over regional scales at time-scales of several
+days to several weeks. Identifying cycles in pollution over large areas
+would have been useful to explore the sensitivity of cloud properties to
+human emissions - an important area of study in atmospheric science. To
+do this, my co-author Tariq Shahbaz, and I applied Lomb-Scargle period
+analysis techniques, and Monte Carlo significance testing. We used
+relatively large spatial scales (Europe, USA, and China) as identifying
+small-scale periods would not have helped us to subsequently examine
+cloud properties (which are very noisy data, and so it is preferential
+to examine them over large areas to reduce variability). An example of
+the period analysis shown in the paper is given below for the European
+region (you can see the paper itself for further discussion). Although
+we didn't identify any cycles useful for this in this data, a range of
+evidence suggests that such cycles they do exist at a variety of
+horizontal and vertical scales (which we provide a brief discussion of
+in the paper) and work on this topic continues.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="images/Zoom_period.png" /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Lomb-Scargle periodogram over the European region for seasonally
+de-trended CO data. A sub-plot shows a zoom on the only region of the
+periodogram to show a statistically significant signal at the &lt;em&gt;p&lt;/em&gt; &amp;lt;
+0.01 level -— the significance threshold is indicated by the red line
+(calculated from Monte Carlo methods described in the paper). The
+significant peak corresponds to a frequency of 2.286 days, and was found
+to be an artefact, present at all domains, related to the orbital period
+of the Terra satellite. Adapted from Figure 4–5 of Laken &amp;amp; Shahbaz,
+2014.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In addition, we were motivated to use the opportunity to examine how
+carbon monoxide in the troposphere has changed over the past decade.
+Globally, the data shows an overall decline in the amount of
+tropospheric carbon monoxide of nearly 7% over the 2000–2012 period.
+This could be related to increasing efficiency of combustion technology,
+and researchers have long noted that tropospheric CO shows a declining
+trend driven by increasingly more efficient combustion technology
+(e.g.&lt;a href="http://www.sciencemag.org/content/263/5153/1587.short"&gt;see here&lt;/a&gt;).
+For clarity, I note that it is perfectly possible for the greenhouse gas
+carbon dioxide to be increasing over the past decade (&lt;a href="http://keelingcurve.ucsd.edu"&gt;as they have been
+doing&lt;/a&gt;) whilst carbon monoxide
+concentrations can simultaneously decrease.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="images/Fig_global.png" /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Globally averaged measurements of CO from MOPITT (Ver 5, Lev 3 combined
+product) with 360-day running mean (red line). Significant linear trend
+of &lt;em&gt;y&lt;/em&gt;=-2.97×10^13^&lt;em&gt;x&lt;/em&gt;+1.89×10^18^, &lt;em&gt;r&lt;/em&gt;=-0.42, &lt;em&gt;df&lt;/em&gt;=44, &lt;em&gt;p&lt;/em&gt; &amp;lt; 0.01.
+Equivalent to a net CO reduction of 6.58% (or 0.56% per year). Adapted
+from Figure 1 of Laken &amp;amp; Shahbaz, 2014.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I note that I can’t say for certain that the decreasing trend is
+completely physical, as long-term changes in satellite-detected
+observations have also been known to be attributed to decay in the
+instruments over time, as space is a harsh environment in which to
+operate and instruments on-board satellites tend to decay, whilst at the
+same time the orbiting satellites themselves loose altitude as a result
+of drag on the Earth’s tenuous atmosphere leading to an inevitable
+return.&lt;/p&gt;
+&lt;p&gt;I found that when you look at carbon monoxide changes over smaller
+scales during the past decade the picture becomes more interesting than
+a simple decrease. There are large differences between regions — these
+reflect the changes in global society over the past decade - in
+particular we see that although on average carbon monoxide decreased
+over the globe, pollution over China, India and across the Asian region
+has undergone statistically significant increases: these are almost
+certainly linked with increasing industrial activity and economic growth
+over the regions. Similar increases in different types of pollution have
+also been previously reported (e.g. &lt;a href="http://www.nature.com/nature/journal/v437/n7055/abs/nature04092.html"&gt;increasing nitrous oxide emissions
+over
+China&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;I also observed an increase in carbon monoxide pollution over areas of
+Africa and South America (although these changes covered a smaller area
+and were less intense than those seen over the Asian region). Biomass
+burning was previously a primary factor in driving emissions over these
+regions, however, it is likely that the increasing trend over the past
+decade is attributed to industrial development. Indeed, these changes
+could represent a rise of major Southern Hemisphere contributors to
+atmospheric pollution, with significant implications for air quality and
+health over the regions, such as suggested by &lt;a href="http://www.sciencemag.org/content/302/5651/1716.short"&gt;Akimoto
+(2003)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="images/Spatial_fig.png" /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Linear trends in CO between March 2000 and April 2012 for (a) all
+pixels, and (b) statistically significant (&lt;em&gt;p&lt;/em&gt; &amp;lt; 0.05 two-tailed
+level) pixels only. For each pixel, the values are obtained by
+subtracting the last point of a linear regression over the full
+time-period from the first point (i.e. the values are a linear change
+over a 1D time series of each pixel individually). For each pixel,
+statistical significance was calculated independently by comparison of
+observed values to a probability density function obtained by Monte
+Carlo procedures. Adapted from Figure 3 of Laken &amp;amp; Shahbaz, 2014.&lt;/p&gt;
+&lt;/blockquote&gt;</summary><category term="Pollution"></category><category term="Statistics"></category><category term="Remote sensing"></category></entry></feed>

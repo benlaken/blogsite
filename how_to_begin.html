@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Benjamin Laken, Earth science meanderings">
+
+        <link rel="alternate"  href="https://benlaken.com/feeds/all.atom.xml" type="application/atom+xml" title="Benjamin Laken Full Atom Feed"/>
+        <link rel="alternate" href="https://benlaken.com/feeds/all.rss.xml" type="application/rss+xml" title="Benjamin Laken Full RSS Feed"/>
+
+        <title>How can I begin to improve my workflow? // Benjamin Laken // Earth science meanderings</title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./theme/css/pygments.css">
+    <link rel="stylesheet" href="./theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="./theme/js/main.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+<div class="sidebar sidebar-article pure-u">
+    <header class="header-article">
+        <hgroup>
+            <!--<a href="./author/benjamin-laken.html" title="See posts by Benjamin Laken">-->
+                    <a href="./pages/about-me.html"><img class="avatar" alt="Benjamin Laken" src="https://www.gravatar.com/avatar/69dcde5b90cca46e5111cd8c306d155d"></a>
+            <!--</a>-->
+            <h2 class="article-info">Benjamin Laken</h2>
+            <p class="social">
+                      <a href="https://github.com/benlaken">
+                          <i class="fa fa-github-square fa-2x article-icons select_item"></i>
+                      </a>
+                      <a href="https://twitter.com/benlaken">
+                          <i class="fa fa-twitter-square fa-2x article-icons select_item"></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/benjamin-laken-a3089087">
+                          <i class="fa fa-linkedin-square fa-2x article-icons select_item"></i>
+                      </a>
+                      <a href="https://impactstory.org/u/0000-0003-2021-6258/publications">
+                          <i class="fa fa-book fa-2x article-icons select_item"></i>
+                      </a>
+            <p>
+            <!--<small class="about-author"></small>-->
+            <h5></h5>
+            <p>Sat 01 October 2016</p>
+            <a href=".">
+                <i class="fa fa-home fa-lg select_item"></i><span class="icon-label select_item"><span> Home </span></span>
+              </a>
+        </hgroup>
+    </header>
+</div>    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>How can I begin to improve my workflow?</h1>
+                        <p class="post-meta">
+                            <i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span>                                 <a class="post-category" href="./tag/reproducibility.html">Reproducibility</a>
+                                <a class="post-category" href="./tag/open-science.html">Open Science</a>
+                                <a class="post-category" href="./tag/software.html">Software</a>
+                        </p>
+                </header>
+            </section>
+            <p><img alt="alt text" src="./images/journey_banner.jpg" title="Original image by Hanna Norlin" /></p>
+<h3>A familiar situation?</h3>
+<p>Are you are toiling away at your project with nothing but your wits, a few hand-me-down scripts, and a supervisor who only has time to interact with you as they hurriedly walk down the corridor on their way to their next meeting? Perhaps it seems like it will be much easier to just get to work hammering away at your task, the way you were originally shown?</p>
+<p>Maybe you saw a talk or read an article about the world of Open Science, and you are starting to have a strong suspicion that there must be a better way to work than the approach you have been using up-till-now: one that may even give you skills that people in the land that lays beyond academia will find attractive! You have heard about tools like Python, version control, and this vague idea of Open Science. But in practical terms, how can you begin?</p>
+<p>You might have a project with a file structure that looks something like this:</p>
+<div class="highlight"><pre><span></span>└── my_project
+    │
+    ├── Code
+    │   ├── process_raw_data.f77  &lt;--- Heart of the project, written in 90&#39;s by, uh, someone...
+    │   └── calculate_result.mat  &lt;--- The postdoc who wrote this already left to work for a bank...
+    │
+    ├── Data
+    │   ├── raw_experiment1.txt  &lt;--- This is the raw data from my instrument
+    │   ├── raw_experiment2.txt
+    │   ├── raw_experiment3.txt
+    │   └── processed_data.dat  &lt;--- Postdoc&#39;s code makes this, which I can put into Excel!
+    │
+    ├── output1.txt             &lt;--- The postdocs code made this, which I can put into excel to examine...
+    ├── experiment1.xlsx        &lt;--- Finally, I can do something useful with this $*#@!
+    ├── experiment2.xlsx
+    ├── my_report_v3.docx       &lt;--- The start of my thesis, or new paper
+    └── summary_results.xlsx    &lt;--- Summary excel sheet, so I can clean up my final results
+</pre></div>
+
+
+<p>In this folder, there is an old FORTRAN program (<code>Code/process_raw_data.f77</code>) that you got from your supervisor, it was written several decades ago and there is no one around who you can ask about this code. (Maybe there is no one even left alive who worked on it...) To get results you start by editing that file: maybe all you really need to do is change one line to point the code at some raw data you got from an instrument (e.g. <code>Data/raw_experiment1.txt</code>) and compile/run the program. On your first day your supervisor told you the exact commands to type to do this.</p>
+<p>The old program might create an intermediate file, something like <code>Data/processed_data.dat</code>. That file is a mess, way to complicated to deal with (Big Endian? Binary what? carriage control characters?). Luckily a postdoc who used to be in your group left behind a Matlab script to process that data into something you can read into Excel. So you run <code>Code/calculate_result.mat</code>, and get <code>output.txt</code>, after some cut-and-paste skills you then have your comprehensible data in a spreadsheet and can begin the real task of analysing it, which was the reason you are doing your work in the first place!</p>
+<p>You make some analysis, spread across multiple pages of your Excel workbook, and end up producing some figures and tables which you put into your word document, write your text, send to your supervisor, await comments and pray they don't ask for any changes that would send you back to square 1!</p>
+<p>This is probably the most common workflow you will find at Universities and companies the world over. Working in this way is really labour intensive, and also incredibly irreproducible, <a href="http://www.popularmechanics.com/science/a22577/genetics-papers-excel-errors/">error-prone</a>! (The <a href="http://modeling-languages.com/whats-bus-factor-software-project/">bus-factor</a> of projects like these are usually very low.) It would be almost impossible for you to ensure someone could recreate the results presented in your final document without you sat beside them.</p>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">You can download our code from the URL supplied. Good luck downloading the only postdoc who can get it to run, though <a href="https://twitter.com/hashtag/overlyhonestmethods?src=hash">#overlyhonestmethods</a></p>&mdash; Ian Holmes (@ianholmes) <a href="https://twitter.com/ianholmes/status/288689712636493824">January 8, 2013</a></blockquote>
+
+<p><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<p>The good news is there is no where to go but up, and any change to this workflow would be a positive one! If you need to produce results quickly, then it likely isn't feasible to just learn some new tools, snap-your fingers, and immediately change this workflow. Instead, you will have to gradually migrate towards a fully Open Science approach, perhaps over the course of several projects (like I did).</p>
+<h3>Starting the journey</h3>
+<p>The best place to start is to download <a href="https://www.continuum.io/downloads">Anaconda Python</a> from Continuum Analytics, you don't need administrator privileges, and it works on Windows, Mac, and Nix* systems. Get one with Python version 3, not 2. (If you need to switch later on that will be easy, but by default you should try to work in Python 3.) Also download <a href="https://git-scm.com">Git</a> (and <a href="https://git-for-windows.github.io">Git-Bash</a> if you are on windows).</p>
+<p>With that trifecta of the shell, a high-level programming language and a version control system you are ready to begin! The next step is to run through a couple of tutorials. If you cant get yourself to a <a href="http://software-carpentry.org">Software Carpentry course</a>, you can run through their materials on their website. Also have a look at <a href="https://www.codecademy.com/learn/all">CodeAcademy</a> (particularly their <em>'Command Line'</em>, <em>'Learn Git'</em>, and <em>'Learn Python'</em> lessons). You will probably pick up the basics of Python and Bash in just a few days sufficiently to begin using these tools for your own work.</p>
+<h3>Project triage</h3>
+<h4>Step 1: Moving from Excel to a few bad bits of code</h4>
+<p>The easiest place to start improving your workflow is on the part that is most labour-intensive and least reproducible: usually this means the Excel workbooks. Instead of reading the data into Excel, read it with Python, and try to create some scripts that can do your analysis tasks. I realise this sounds like me explaining how to play the piano by saying <em>"Step 1: sit in front of a piano. Step 2: play the piano"</em>, and perhaps at first you will struggle a little to do tasks which you know you could do in a couple of clicks in Excel. However, after following a few online tutorials you will see that you can copy and paste large portions of code from tutorials with small changes that will let you read data from a file, do many cool operations (using tools like <a href="http://pandas.pydata.org">Pandas</a> for example), and then plot (e.g. using <a href="http://matplotlib.org">Matplotlib</a>). Even if your code is awful at least it is automated, and can be tracked with version control tools and improved later. Maybe you will even keep a few Excel files while you are still going through a transition, and that is totally fine.</p>
+<h4>Step 2: Minor improvements = big time-saving</h4>
+<p>Let's assume you've started adding a few simple Python scripts to your project that just look like a long list of <em>"Read this data, do X and Y then make a plot"</em>. And maybe you're starting to see a few small benefits, like saving time when you have to re-run your workflow to add more data or tweak something small. But on the whole, you might feel like this hasn't really saved you much time yet. You may even feel like you've lost time learning Python, and have gotten quite frustrated a few times along the way wrapping your mind around new ways of thinking about your data.</p>
+<p>Don't despair! Imagine you are going to start a new project, and you start to notice that there are a few similarities with your old one. You get the feeling you can start to re-use bits of your old python code again, maybe even improve them a little. Now you will start to see one of the powerful benefits of working like this: <strong>abstraction</strong>.</p>
+<p>For the sake of explanation, imagine your task is multiplying two numbers together thousands of times. The first time you solved this problem, you only knew enough Python to write it out like this:</p>
+<div class="highlight"><pre><span></span><span class="n">result_1</span> <span class="o">=</span> <span class="n">value_1</span> <span class="o">*</span> <span class="n">value_2</span>
+<span class="n">result_2</span> <span class="o">=</span> <span class="n">value_3</span> <span class="o">*</span> <span class="n">value_4</span>
+<span class="n">result_3</span> <span class="o">=</span> <span class="n">value_5</span> <span class="o">*</span> <span class="n">value_6</span>
+<span class="o">...</span><span class="n">etc</span>
+</pre></div>
+
+
+<p>Now you have been working with Python for a little while, you realise you can make an abstract solution, that will solve this problem once-and-for-all, a solution you can re-use. It might look like this:</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">my_tool</span><span class="p">(</span><span class="n">input_1</span><span class="p">,</span> <span class="n">input_2</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">input_1</span> <span class="o">*</span> <span class="n">input_2</span>
+</pre></div>
+
+
+<p>Much simpler! and when you call your inputs in a loop and feed them into this function it seems to works brilliantly! But actually, it is a little fragile like this. As you learn more, you will find that if you add a few more pieces to the code, you can get really important benefits:</p>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pytest</span>
+
+<span class="k">def</span> <span class="nf">my_tool</span><span class="p">(</span><span class="n">input_1</span><span class="p">,</span> <span class="n">input_2</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">input_1</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">int</span><span class="p">(</span><span class="n">input_2</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">input_1</span> <span class="o">*</span> <span class="n">input_2</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Error: inputs are not numbers&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">test_my_tool</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">my_tool</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="o">==</span> <span class="mi">100</span>
+    <span class="k">assert</span><span class="p">(</span><span class="n">my_tool</span><span class="p">(</span><span class="mf">3.5</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">)</span> <span class="o">==</span> <span class="mf">19.25</span><span class="p">)</span>
+    <span class="k">with</span> <span class="n">pytest</span><span class="o">.</span><span class="n">raises</span><span class="p">(</span><span class="ne">ValueError</span><span class="p">):</span>
+        <span class="n">my_tool</span><span class="p">(</span><span class="s1">&#39;NA&#39;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+
+<p>It is really remarkable what's going on in these few lines of code: Your tool starts by checking that it has been given the right type of data (numerical data), by seeing if it can convert it to an integer.  If the inputs are good, it will do your task. If it can't, the program will stop, giving an Error: so you wont accidentally process bad values and wind up with junk values in your results that you have to hunt down later!</p>
+<p>Things get more interesting when we see what comes next - a test! This is a reality check, to make sure that no matter how you extend or change your tool in the future, it will always produce results that make sense. It even checks that the tool fails when it should, so you know that despite changes you may make tomorrow, it wont start giving back unexpected results, adding errors into your results. This is really important, as projects change over time, and it is guaranteed you won't write a perfect program first time. So when you go back in the future and change your functions, you can be relatively confident you wont inadvertently introduce errors into your work. You can run this test with <a href="http://docs.pytest.org/en/latest/">pytest</a>.</p>
+<p>It is difficult to over-state the time-saving and productivity boosting potential of making small, easy-to-understand solutions, that are re-useable, and include tests: your final workflow should be a daisy-chain of tools like this. If you can get this far into updating your working approach, you will be making great progress, and will be poised to take advantage of some really amazing tools in the future, and share with <a href="https://www.software.ac.uk">communities of people</a> already using them!</p>
+<p>This post was part 2 in a series.</p>
+<p>Banner image by <a href="https://www.flickr.com/photos/hanorlin/">Hanna Norlin</a>.</p>
+            <div class="hr"></div>
+            <a href="#" class="go-top">Go Top</a>
+    <section>
+        <p id="post-share-links">
+            Share this post:
+            <a class="select_item" href="http://twitter.com/home?status=b'How%20can%20I%20begin%20to%20improve%20my%20workflow%3F%20https%3A//benlaken.com/how_to_begin.html'" target="_blank" title="Share on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            &middot;
+            <a class="select_item" href="http://www.facebook.com/sharer/sharer.php?u=https%3A//benlaken.com/how_to_begin.html" target="_blank" title="Share on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            &middot;
+            <a class="select_item" href="https://plus.google.com/share?url=https%3A//benlaken.com/how_to_begin.html" target="_blank" title="Share on Google Plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            &middot;
+            <a class="select_item" href="mailto:?subject=How%20can%20I%20begin%20to%20improve%20my%20workflow%3F&amp;body=https%3A//benlaken.com/how_to_begin.html" target="_blank" title="Share via Email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </p>
+    </section>
+<div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = "www-benlaken-com"; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div><footer class="footer">
+    <h3><a class="select_item" href="./archives.html" > Archive</a></h3>
+    <p>&copy; Benjamin Laken &ndash;
+        Built with a modified <a href="https://github.com/benlaken/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-10815370-4");
+            pageTracker._trackPageview();
+            } catch(err) {}
+    </script>
+</body>
+</html>
